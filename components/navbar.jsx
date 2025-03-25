@@ -337,20 +337,20 @@ export default function Navbar() {
         <DialogContent sx={{ pb: 3 }}>
           <Grid container spacing={2} sx={{ mt: 1 }}>
             {[
-              {
-                title: "Software Developer",
-                description: "Focused on full-stack development skills and projects",
-                path: "/Regved_Pande_Resume_Dev.pdf",
+               {
+                title: "For .NET Developer Profile",
+                description: "Based on my .Net Development skills and projects",
+                path: "/MyDotNetResume.pdf",
               },
               {
-                title: "Software Engineer",
-                description: "Highlighting engineering principles and system design",
-                path: "/Regved_Pande_Resume_Eng.pdf",
+                title: "For Java Developer Profile",
+                description: "Based on my  Java Development skills and projects",
+                path: "/MyJavaSpringbootResume.pdf",
               },
               {
-                title: "AI/ML Specialist",
-                description: "Emphasizing AI/ML projects and related technologies",
-                path: "/Regved_Pande_Resume_AI.pdf",
+                title: "For AI/ML Engineer Profile",
+                description: "Based on my Python Development skills and projects",
+                path: "/MyPythonResume.pdf",
               },
             ].map((resume, index) => (
               <Grid item xs={12} key={index}>
