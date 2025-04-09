@@ -342,16 +342,6 @@ export default function Navbar() {
                 description: "Based on my .Net Development skills and projects",
                 path: "/MyDotNetResume.pdf",
               },
-              {
-                title: "For Java Developer Profile",
-                description: "Based on my  Java Development skills and projects",
-                path: "/MyJavaSpringbootResume.pdf",
-              },
-              {
-                title: "For AI/ML Engineer Profile",
-                description: "Based on my Python Development skills and projects",
-                path: "/MyPythonResume.pdf",
-              },
             ].map((resume, index) => (
               <Grid item xs={12} key={index}>
                 <Paper

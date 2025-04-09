@@ -46,25 +46,24 @@ export default function Experience() {
       "company": "Cylsys Software Solution Private Limited",
       "location": "Narsinghpur, Madhya Pradesh",
       "period": "July 2024 - March 2025",
-      "description": "Implemented MVC architecture with ADO.NET, Crypto Helper, PostgreSQL, and developed robust RESTful APIs , enabling secure transaction processing for over 200K users.",
-      "skills": [".NET Core", "MVC", "ADO.NET", "PostgreSQL", "JWT", "Azure", "RESTful API"]
+      "description": "Developed enterprise-grade applications including a compliance system for 200K+ users using .NET Core, ASP.NET MVC, Dapper, and PostgreSQL. Built secure RESTful APIs with ADO.NET and SQL Server for the Nuvama financial platform, integrated with JWT auth and Azure Load Balancer for 99.9% uptime.",
+      "skills": [".NET 5/6/8",".NET Core", "ASP.NET MVC", "Dapper", "ADO.NET", "PostgreSQL", "SQL Server", "JWT", "Azure", "RESTful APIs"]
     },
     {
-      title: "Java Full Stack Intern",
-      company: "MKP IT Services",
-      location: "Nagpur, Maharashtra",
-      period: "October 2023 - June 2024",
-      description:
-        "Engineered full-stack web applications utilizing Java backend technologies (Spring Boot, Hibernate ORM, RESTful APIs) integrated with React.js frontend, implementing responsive designs.",
-      skills: ["Java", "Spring Boot", "React.js", "RESTful APIs", "Hibernate", "Maven"],
+      "title": "Associate Software Developer",
+      "company": "MKP IT Services Private Limited",
+      "location": "Nagpur, Maharashtra",
+      "period": "October 2023 - June 2024",
+      "description": "Built CRM and inventory systems using .NET 6, ASP.NET MVC, Entity Framework Core, and SQL Server. Designed secure, modular backend components with Razor Pages and JWT authentication, supporting real-time updates, validations, and reporting in Agile delivery cycles.",
+      "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "Razor Pages", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
     },
     {
-      title: "Technology Associate",
-      company: "Acmegrade Private Limited",
-      location: "Bengaluru, Karnataka",
-      period: "January 2023 - March 2023",
-      description: "Surpassed expectations by consistently exceeding targets and delivering measurable results within the tech landscape. Trusted advisor to C-suite executives, building and nurturing strong relationships with leadership teams. Secured key partnerships through strategic problem-solving and effective collaboration.",
-      skills: ["Data Analytics", "Python", "Strategic Problem Solving", "Microsoft Excel"]
+      "title": "Technology Associate",
+      "company": "Acmegrade Private Limited",
+      "location": "Bengaluru, Karnataka",
+      "period": "January 2023 - March 2023",
+      "description": "Improved operations by 18% through advanced data analytics using Python and Excel. Delivered AI-powered insights to executives, securing 3 tech partnerships and contributing to a 15% revenue uplift through strategic reporting and automation.",
+      "skills": ["Data Analytics", "Python", "AI Insights", "Microsoft Excel", "Automation", "Business Intelligence"]
     }
 
   ]

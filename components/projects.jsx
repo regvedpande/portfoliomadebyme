@@ -159,7 +159,7 @@ export default function Projects() {
   }
 
   const projects = [
-    // .NET Projects (4)
+    // .NET Projects
     {
       id: "net1",
       title: "Compliance and Declaration System",
@@ -263,9 +263,6 @@ export default function Projects() {
       longDescription:
         "Razor IoT is a state-of-the-art real-time monitoring and control platform that leverages Razor Pages to deliver a sleek, responsive interface for managing connected devices. With cutting-edge technologies like SignalR for live updates and Azure IoT integration for robust cloud connectivity, this platform provides actionable insights and unparalleled scalability. Advanced crypto capabilities via CryptoHelper and comprehensive logging ensure secure and reliable operations. Designed to empower businesses and developers alike, Razor IoT sets a new benchmark in IoT innovation and performance.",
     },
-    // Add these new project objects to the projects array, right after the existing projects
-
-    // Add this .NET project with GitHub and demo
     {
       id: "net7",
       title: "Inventory Management System",
@@ -281,69 +278,39 @@ export default function Projects() {
       longDescription:
         "This inventory management system helps businesses track their stock levels, manage orders, and monitor sales and deliveries. It features real-time inventory updates, low-stock alerts, barcode scanning integration, and comprehensive reporting tools. The system is designed to be scalable and can be customized for different types of retail businesses.",
     },
-
-    // Add this Java project
     {
-      id: "java3",
-      title: "Spring AI Code Analyzer",
+      id: "net8",
+      title: "Healthcare Patient Portal",
       description:
-        "A web application that uses AI to analyze and debug code snippets, providing suggestions for improvement.",
-      image: "/spring-ai-gemini.jpeg?height=300&width=500",
-      category: "java",
-      technologies: ["Java", "Spring Boot", "Spring AI", "Thymeleaf", "WebClient", "Project Reactor", "Gemini API"],
-      github: "https://github.com/regvedpande/springaicodechecker",
-      live: "https://codechecker-demo.vercel.app",
-      videoUrl: "codeanlysis.mp4",
+        "A secure patient portal for healthcare providers with appointment scheduling and medical records access.",
+      image: "/healthcare-portal.jpg?height=300&width=500",
+      category: "net",
+      technologies: [".NET 7", "C#", "Entity Framework Core", "Identity Server", "HIPAA Compliance", "Azure"],
+      github: "https://github.com/regvedpande/healthcareportal",
+      live: "https://healthcare-portal-demo.vercel.app",
+      featured: false,
+      liveProject: false,
+      videoUrl: "",
       longDescription:
-        "The Spring AI Code Analyzer is a web application designed to help developers debug and improve their code using AI. Built with Java and Spring Boot, it features a user-friendly interface powered by Thymeleaf for dynamic HTML rendering. The application integrates with the Gemini API via WebClient to analyze code snippets and provide actionable feedback. Project Reactor is used for reactive programming, ensuring efficient handling of asynchronous API calls. Users can input code through a web form, and the application returns detailed suggestions for improvement, making it a valuable tool for learning and development. The project demonstrates skills in backend development, API integration, and reactive programming.",
-    },
-
-    // Add this Python project
-    {
-      id: "python3",
-      title: "Deep Learning Image Recognition API",
-      description: "A powerful deep learning-based image recognition API using TensorFlow, OpenCV, and Flask.",
-      image: "/1706850719554.png?height=300&width=500",
-      category: "python",
-      technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "Docker"],
-      github: "https://github.com/regvedpande/imagerecognitionapi.git",
-      live: "https://your-live-demo-link.com",
-      videoUrl: "/pot.mp4",
-      longDescription:
-        "This Image Recognition API provides deep learning capabilities to identify objects, scenes, and people in images. Using a pre-trained MobileNetV2 model from TensorFlow, it processes images and returns top predictions with confidence scores. The API is built with Flask for easy integration, OpenCV for image preprocessing, and supports deployment via Docker. Ideal for use cases such as automated tagging, visual search, and content moderation.",
-    },
-
-    // Java Projects (2)
-    {
-      id: "java1",
-      title: "Banking Microservices",
-      description: "A microservices-based banking system with account management, transactions, and reporting.",
-      image: "/Screenshot 2025-03-20 145129.png?height=300&width=500",
-      category: "java",
-      technologies: ["Java", "Spring Boot", "PostgreSQL", "Microservices", "Kafka", "Eureka", "Spring Cloud Gateway"],
-      github: "https://github.com/regvedpande/bankingmicroservices",
-      live: "https://banking-demo.vercel.app",
-      featured: true,
-      videoUrl: "/Untitled video - Made with Clipchamp (4).mp4",
-      longDescription:
-        "This banking system is built using a microservices architecture that demonstrates industry best practices. The solution includes Discovery Server (Eureka): All microservices register with Eureka, which acts as a central registry to enable dynamic service discovery. API Gateway (Spring Cloud Gateway): A gateway routes incoming client requests to the appropriate microservice based on the service ID. It provides a single entry point, enabling features like centralized security and rate limiting.Core Banking Microservice: This service handles account management, authentication (using JWT), and transactions. It communicates with other services via Kafka for asynchronous, event-driven messaging, ensuring data consistency and scalability When a client makes a request, the API Gateway checks with Eureka to locate the required service and then forwards the request accordingly. JWT tokens secure the endpoints, ensuring that only authorized users can access protected resources. This design decouples service implementations, making the system highly scalable and resilient—a solution that impresses both users and senior developers.",
+        "This healthcare patient portal provides a secure interface for patients to access their medical records, schedule appointments, and communicate with healthcare providers. Built with .NET 7 and Entity Framework Core, it ensures HIPAA compliance and data security. The system features role-based access control, secure messaging, appointment management, and integration with electronic health records systems.",
     },
     {
-      id: "java2",
-      title: "Enterprise Document Management System",
-      description:
-        "A secure document management system with version control, granular permissions, and full-text search capabilities.",
-      image: "/examples-of-top-dms-efilecabinet.jpg?height=300&width=500",
-      category: "java",
-      technologies: ["Java", "Spring Boot", "PostgreSQL", "Hibernate", "Thymeleaf", "JWT"],
-      github: "https://github.com/regvedpande/enterprisedocumentmanager",
-      live: "https://inventory-demo.vercel.app",
-      videoUrl: "/Untitled video - Made with Clipchamp (3) (1).mp4",
+      id: "net9",
+      title: "E-Learning Management System",
+      description: "A comprehensive learning management system for educational institutions and corporate training.",
+      image: "/elearning-platform.jpg?height=300&width=500",
+      category: "net",
+      technologies: [".NET 6", "Blazor", "SQL Server", "SignalR", "Azure Media Services", "Identity"],
+      github: "https://github.com/regvedpande/elearningplatform",
+      live: "https://elearning-demo.vercel.app",
+      featured: false,
+      liveProject: false,
+      videoUrl: "",
       longDescription:
-        "This enterprise-grade document management system provides organizations with a secure platform for storing, organizing, and retrieving documents. Built with Java and Spring Boot, it features robust version control, granular permission settings, and powerful full-text search capabilities. The system integrates with scalable cloud storage and implements JWT authentication for secure access control. With its intuitive interface and comprehensive API, it streamlines document workflows and enhances collaboration across teams.",
+        "This E-Learning Management System provides a complete solution for creating, delivering, and managing educational content. Built with .NET 6 and Blazor, it offers features such as course creation, student enrollment, progress tracking, assessment tools, and real-time collaboration using SignalR. The platform supports video content delivery through Azure Media Services and includes features for discussion forums, assignment submission, and automated grading. It's designed to be scalable and can be customized for various educational contexts from K-12 to corporate training environments.",
     },
 
-    // Python Projects (2)
+    // Python/ML Projects - consolidated into one category
     {
       id: "python1",
       title: "CipherVault",
@@ -372,15 +339,26 @@ export default function Projects() {
       longDescription:
         "This Dream Journal Sentiment Analyzer API uses FastAPI to process user-submitted dream descriptions. It leverages TextBlob and NLTK for sentiment analysis and theme extraction, providing users with a sentiment score, dominant emotion, key themes, and a creative interpretation of their dreams.",
     },
-
-    // AI/ML Projects (3)
+    {
+      id: "python3",
+      title: "Deep Learning Image Recognition API",
+      description: "A powerful deep learning-based image recognition API using TensorFlow, OpenCV, and Flask.",
+      image: "/1706850719554.png?height=300&width=500",
+      category: "python",
+      technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "Docker"],
+      github: "https://github.com/regvedpande/imagerecognitionapi.git",
+      live: "https://your-live-demo-link.com",
+      videoUrl: "/pot.mp4",
+      longDescription:
+        "This Image Recognition API provides deep learning capabilities to identify objects, scenes, and people in images. Using a pre-trained MobileNetV2 model from TensorFlow, it processes images and returns top predictions with confidence scores. The API is built with Flask for easy integration, OpenCV for image preprocessing, and supports deployment via Docker. Ideal for use cases such as automated tagging, visual search, and content moderation.",
+    },
     {
       id: "ai1",
       title: "AI Debate Simulator",
       description: "A web app that generates debates between an optimist and a skeptic using the Gemini API.",
       image:
         "/1-Google-Rolls-Out-Gemini-2.0-Flash-as-Default-Introduces-2.0-Pro-Experimental-Trial-Source-winbuzzer.com_.jpg?height=300&width=500",
-      category: "ai",
+      category: "python",
       technologies: ["Python", "Flask", "Gemini API", "HTML", "CSS"],
       github: "https://github.com/regvedpande/ai-debate-simulator",
       live: "https://ai-debate-simulator-demo.vercel.app",
@@ -395,7 +373,7 @@ export default function Projects() {
       description:
         "A web-based tutoring system powered by the Gemini API, providing intelligent responses to user queries.",
       image: "/f34d81945efec19e43ad4899cbb737e1.png?height=300&width=500",
-      category: "ai",
+      category: "python",
       technologies: ["Python", "Django", "React", "Gemini API", "CORS"],
       github: "https://github.com/regvedpande/geminipoweredtutor.git",
       live: "https://predictive-maintenance-demo.vercel.app",
@@ -409,7 +387,7 @@ export default function Projects() {
       description:
         "A web application that generates images from text prompts using Stability AI's Stable Diffusion model.",
       image: "/creating-easy-stable-diffusion-3-sd3-image-with-old-model-v0-1mf0wtfgq5kc1.jpg?height=300&width=500",
-      category: "ai",
+      category: "python",
       technologies: ["Python", "Diffusers", "Torch", "Gradio", "PyYAML", "Pillow"],
       github: "https://github.com/regvedpande/stablediffusion",
       live: "https://your-deployed-app-url.com",
@@ -526,10 +504,10 @@ export default function Projects() {
                           },
                         }}
                       >
-                        <Box sx={{ position: "relative", height: "160px", overflow: "hidden" }}>
+                        <Box sx={{ position: "relative", height: { xs: "180px", md: "160px" }, overflow: "hidden" }}>
                           <CardMedia
                             component="img"
-                            height="160"
+                            height={isMobile ? "180" : "160"}
                             image={project.image}
                             alt={project.title}
                             sx={{
@@ -670,9 +648,7 @@ export default function Projects() {
           >
             <Tab label="All Projects" value="all" />
             <Tab label=".NET Projects" value="net" />
-            <Tab label="Java Projects" value="java" />
-            <Tab label="Python Projects" value="python" />
-            <Tab label="AI & ML Projects" value="ai" />
+            <Tab label="Python & ML" value="python" />
           </Tabs>
 
           <Grid container spacing={4}>

@@ -505,7 +505,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    19+
+                    18+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Months .NET
@@ -526,7 +526,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    10+
+                    6+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     .NET Projects
@@ -568,7 +568,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    15+
+                    12+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Projects

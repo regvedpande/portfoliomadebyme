@@ -25,7 +25,7 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false)
   const [openResumeDialog, setOpenResumeDialog] = useState(false)
 
-  const titles = ["Full-Stack Developer", "Software Developer", "Software Engineer", "AI/ML Engineer"]
+  const titles = ["Full-Stack Developer", "Software Developer", "Dot Net Developer"]
 
   // Typewriter effect
   useEffect(() => {
@@ -183,7 +183,7 @@ export default function Hero() {
                     textAlign: { xs: "center", lg: "left" }, // Ensure proper alignment
                   }}
                 >
-                  Crafting innovative enterprise solutions with .NET, Java, Python, and cutting-edge AI/ML technologies.
+                  .NET Developer focused on building secure, scalable, and high-performance enterprise applications.
                 </Typography>
               </motion.div>
 
@@ -483,7 +483,7 @@ export default function Hero() {
             pb: 1,
           }}
         >
-          Select Resume Version
+          My Resume
         </DialogTitle>
         <DialogContent sx={{ pb: 3 }}>
           <Grid container spacing={2} sx={{ mt: 1 }}>
@@ -493,16 +493,7 @@ export default function Hero() {
                 description: "Based on my .Net Development skills and projects",
                 path: "/MyDotNetResume.pdf",
               },
-              {
-                title: "For Java Developer Profile",
-                description: "Based on my  Java Development skills and projects",
-                path: "/MyJavaSpringbootResume.pdf",
-              },
-              {
-                title: "For AI/ML Engineer Profile",
-                description: "Based on my Python Development skills and projects",
-                path: "/MyPythonResume.pdf",
-              },
+             
             ].map((resume, index) => (
               <Grid item xs={12} key={index}>
                 <Paper
