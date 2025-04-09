@@ -8,13 +8,10 @@ import {
   Psychology as BrainIcon,
   Cloud as CloudIcon,
   Code as CodeIcon,
-  DeveloperBoard as CpuIcon,
   Storage as DatabaseIcon,
   DataObject as DataObjectIcon,
   Dataset as DatasetIcon,
-  Devices as DevicesIcon,
   Dns as DnsIcon,
-  Language as GlobeIcon,
   Layers as LayersIcon,
   Hub as NetworkIcon,
   Extension as PuzzleIcon,
@@ -27,85 +24,122 @@ import { motion } from "framer-motion"
 export default function Skills() {
   const theme = useTheme()
 
- 
   const skills = [
-    // .NET Skills
+    // .NET & C# Development Skills (previously .NET Core)
     {
-      name: ".NET Core",
+      name: ".NET Framework",
       icon: <CodeIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: ".NET",
+      category: ".NET & C# Development",
     },
     {
       name: "C#",
       icon: <BracesIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
-      category: ".NET",
+      category: ".NET & C# Development",
     },
+    {
+      name: ".NET 5/6/7/8",
+      icon: <CodeIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
+    {
+      name: "Razor Pages",
+      icon: <LayersIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
+    {
+      name: "Microservices",
+      icon: <NetworkIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
+    {
+      name: "SignalR - Real-time",
+      icon: <NetworkIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
+
+    // Web API & ASP.NET Core Skills (previously ASP.NET)
     {
       name: "ASP.NET MVC",
       icon: <WorkflowIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(29, 29, 29)" : "rgb(210, 210, 210)",
-      category: ".NET",
+      category: "Web API & ASP.NET Core",
     },
     {
-      name: "Entity Framework",
+      name: "RESTful API",
+      icon: <ApiIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "Web API (Controllers)",
+      icon: <ApiIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "JWT & Authentication",
+      icon: <DnsIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "Custom Middleware",
+      icon: <PuzzleIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "Dependency Injection",
+      icon: <WorkflowIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(29, 29, 29)" : "rgb(210, 210, 210)",
+      category: "Web API & ASP.NET Core",
+    },
+
+    // Database, ORM & Cloud Services Skills (previously Data)
+    {
+      name: "Entity Framework Core",
       icon: <DatabaseIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(96, 96, 96)" : "rgb(180, 180, 180)",
-      category: ".NET",
+      category: "Database, ORM & Cloud Services",
     },
     {
       name: "SQL Server",
       icon: <DatabaseIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: ".NET",
+      category: "Database, ORM & Cloud Services",
     },
     {
-      name: "Web API",
-      icon: <ApiIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
-      category: ".NET",
-    },
-
-    // Java Skills
-    {
-      name: "Java",
-      icon: <CpuIcon fontSize="medium" />,
+      name: "Dapper Micro ORM",
+      icon: <DataObjectIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Java",
+      category: "Database, ORM & Cloud Services",
     },
     {
-      name: "Spring Boot",
-      icon: <LayersIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(22, 22, 22)" : "rgb(230, 230, 230)",
-      category: "Java",
+      name: "Azure Cloud Services",
+      icon: <CloudIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Database, ORM & Cloud Services",
     },
     {
-      name: "Hibernate",
+      name: "PostgreSQL",
       icon: <DatabaseIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Java",
+      category: "Database, ORM & Cloud Services",
     },
     {
-      name: "Microservices",
-      icon: <PuzzleIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Java",
-    },
-    {
-      name: "NoSQL/PostgreSQL",
-      icon: <DatabaseIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Java",
-    },
-    {
-      name: "Maven/Gradle",
+      name: "CI/CD Pipelines",
       icon: <DnsIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Java",
+      category: "Database, ORM & Cloud Services",
     },
 
-    // Python AI Skills
+    // Python AI/ML Skills (kept as requested)
     {
       name: "Python",
       icon: <ServerIcon fontSize="medium" />,
@@ -141,44 +175,6 @@ export default function Skills() {
       icon: <AnalyticsIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: "Python",
-    },
-
-    // Web Development
-    {
-      name: "React",
-      icon: <GlobeIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
-    },
-    {
-      name: "JavaScript",
-      icon: <BracesIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
-    },
-    {
-      name: "CSS/SCSS",
-      icon: <LayersIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
-    },
-    {
-      name: "Cloud Services",
-      icon: <CloudIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
-    },
-    {
-      name: "Responsive Design",
-      icon: <DevicesIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
-    },
-    {
-      name: "RESTful APIs",
-      icon: <DataObjectIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Web",
     },
   ]
 
@@ -242,7 +238,7 @@ export default function Skills() {
         </motion.div>
 
         <Grid container spacing={4}>
-          {/* .NET Skills */}
+          {/* .NET & C# Development Skills */}
           <Grid item xs={12} md={6} lg={3}>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -260,13 +256,13 @@ export default function Skills() {
                   fontWeight: 600,
                 }}
               >
-                <CodeIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
+                <DnsIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
                 .NET Development
               </Typography>
 
               <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
                 {skills
-                  .filter((skill) => skill.category === ".NET")
+                  .filter((skill) => skill.category === ".NET & C# Development")
                   .map((skill) => (
                     <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
                       <Paper
@@ -300,7 +296,7 @@ export default function Skills() {
             </motion.div>
           </Grid>
 
-          {/* Java Skills */}
+          {/* Web API & ASP.NET Core Skills */}
           <Grid item xs={12} md={6} lg={3}>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -318,13 +314,13 @@ export default function Skills() {
                   fontWeight: 600,
                 }}
               >
-                <CpuIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
-                Java Full Stack
+                <ApiIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
+                ASP.NET Core
               </Typography>
 
               <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
                 {skills
-                  .filter((skill) => skill.category === "Java")
+                  .filter((skill) => skill.category === "Web API & ASP.NET Core")
                   .map((skill) => (
                     <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
                       <Paper
@@ -358,12 +354,70 @@ export default function Skills() {
             </motion.div>
           </Grid>
 
-          {/* Python AI Skills */}
+          {/* Database, ORM & Cloud Services Skills */}
           <Grid item xs={12} md={6} lg={3}>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  mb: 3,
+                  display: "flex",
+                  alignItems: "center",
+                  color: "text.primary",
+                  fontWeight: 600,
+                }}
+              >
+                <CloudIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
+                Databases &amp; Cloud
+              </Typography>
+
+              <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
+                {skills
+                  .filter((skill) => skill.category === "Database, ORM & Cloud Services")
+                  .map((skill) => (
+                    <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
+                      <Paper
+                        elevation={1}
+                        sx={{
+                          p: 2,
+                          mb: 2,
+                          display: "flex",
+                          alignItems: "center",
+                          backgroundColor: (theme) =>
+                            theme.palette.mode === "light"
+                              ? `${theme.palette.primary.main}10`
+                              : `${theme.palette.primary.main}20`,
+                          color: "text.primary",
+                          borderRadius: "10px",
+                          transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                          "&:hover": {
+                            transform: "scale(1.02)",
+                            boxShadow: theme.shadows[3],
+                          },
+                        }}
+                      >
+                        <Box sx={{ mr: 2, color: theme.palette.primary.main }}>{skill.icon}</Box>
+                        <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                          {skill.name}
+                        </Typography>
+                      </Paper>
+                    </motion.div>
+                  ))}
+              </motion.div>
+            </motion.div>
+          </Grid>
+
+          {/* Python AI/ML Skills */}
+          <Grid item xs={12} md={6} lg={3}>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <Typography
@@ -383,64 +437,6 @@ export default function Skills() {
               <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
                 {skills
                   .filter((skill) => skill.category === "Python")
-                  .map((skill) => (
-                    <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
-                      <Paper
-                        elevation={1}
-                        sx={{
-                          p: 2,
-                          mb: 2,
-                          display: "flex",
-                          alignItems: "center",
-                          backgroundColor: (theme) =>
-                            theme.palette.mode === "light"
-                              ? `${theme.palette.primary.main}10`
-                              : `${theme.palette.primary.main}20`,
-                          color: "text.primary",
-                          borderRadius: "10px",
-                          transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                          "&:hover": {
-                            transform: "scale(1.02)",
-                            boxShadow: theme.shadows[3],
-                          },
-                        }}
-                      >
-                        <Box sx={{ mr: 2, color: theme.palette.primary.main }}>{skill.icon}</Box>
-                        <Typography variant="body1" sx={{ fontWeight: 500 }}>
-                          {skill.name}
-                        </Typography>
-                      </Paper>
-                    </motion.div>
-                  ))}
-              </motion.div>
-            </motion.div>
-          </Grid>
-
-          {/* Web Development */}
-          <Grid item xs={12} md={6} lg={3}>
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <Typography
-                variant="h5"
-                sx={{
-                  mb: 3,
-                  display: "flex",
-                  alignItems: "center",
-                  color: "text.primary",
-                  fontWeight: 600,
-                }}
-              >
-                <GlobeIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
-                Web Development
-              </Typography>
-
-              <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
-                {skills
-                  .filter((skill) => skill.category === "Web")
                   .map((skill) => (
                     <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
                       <Paper
@@ -509,7 +505,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    8+
+                    19+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Months .NET
@@ -530,10 +526,10 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    6+
+                    10+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    Months Java
+                    .NET Projects
                   </Typography>
                 </Box>
               </Grid>
@@ -554,7 +550,7 @@ export default function Skills() {
                     3+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    Months Analysis
+                    Months ML/AI
                   </Typography>
                 </Box>
               </Grid>
@@ -572,7 +568,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    17+
+                    15+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Projects
