@@ -162,10 +162,10 @@ export default function Projects() {
     // .NET Projects
     {
       id: "net1",
-      title: "Compliance and Declaration System",
+      title: "UTI Compliance and Declaration System",
       description:
         "A robust platform for managing employee declarations and compliance at Mutual Fund. It features modules for anti-fraud declarations, NDAs, and compliance forms, ensuring data security and efficiency.",
-      image: "/11.webp?height=300&width=500",
+      image: "/uti-mutual-fund.png?height=300&width=500",
       category: "net",
       technologies: [
         ".NET Core",
@@ -186,10 +186,10 @@ export default function Projects() {
     },
     {
       id: "net2",
-      title: "Manual Invocation System",
+      title: "Nuvama Manual Invocation System",
       description:
         "A sophisticated platform for managing manual invocation processes in financial services, featuring robust API integration and secure authentication.",
-      image: "/male-executive-using-smartphone-conduct-600nw-2108495432.jpg?height=300&width=500",
+      image: "/Nuvama-Wealth-Management.jpg?height=300&width=500",
       category: "net",
       technologies: [".NET Core", "C#", "SQL Server", "Dapper", "Azure", "Bearer Token Authentication", "RESTful API"],
       live: "https://healthcare-demo.vercel.app",
@@ -451,7 +451,7 @@ export default function Projects() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              Showcasing my work across different technologies over past 2 Years
+              Over the past 2 years, I've worked with various clients, delivering impactful solutions across a range of technologies, showcasing my adaptability and commitment to excellence.
             </Typography>
           </Box>
         </motion.div>
