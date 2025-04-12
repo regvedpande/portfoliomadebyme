@@ -418,7 +418,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  8+
+                  1.8+
                 </Box>
               </motion.div>
 
@@ -455,7 +455,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  17+
+                  12+
                 </Box>
               </motion.div>
             </motion.div>
