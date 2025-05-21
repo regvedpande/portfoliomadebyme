@@ -45,7 +45,7 @@ export default function Experience() {
       "title": "Software Developer",
       "company": "Cylsys Software Solution Private Limited",
       "location": "Narsinghpur, Madhya Pradesh",
-      "period": "July 2024 - March 2025",
+      "period": "July 2024 - April 2025",
       "description": "Developed enterprise-grade applications including a compliance system for 200K+ users using .NET Core, ASP.NET MVC, Dapper, and PostgreSQL. Built secure RESTful APIs with ADO.NET and SQL Server for the Nuvama financial platform, integrated with JWT auth and Azure Load Balancer for 99.9% uptime.",
       "skills": [".NET 5/6/8",".NET Core", "ASP.NET MVC", "Dapper", "ADO.NET", "PostgreSQL", "SQL Server", "JWT", "Azure", "RESTful APIs"]
     },
