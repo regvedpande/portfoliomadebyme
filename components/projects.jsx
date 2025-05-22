@@ -199,19 +199,19 @@ export default function Projects() {
         "The Manual Invocation System is designed to streamline the manual invocation process for financial instruments, providing a comprehensive solution for handling invocation requests, approvals, and data management. The system features a robust RESTful API secured with Bearer token authentication, enabling seamless integration with external financial applications and services. Key functionalities include user authentication, detailed logging, and efficient data handling through Dapper and PostgreSQL. The API supports various endpoints for managing invocation requests, updating approval statuses, and retrieving detailed data, ensuring efficient and secure data exchange. The system's architecture is designed for scalability and maintainability, making it a reliable tool for financial institutions.",
     },
     {
-      id: "net3",
-      title: "Advanced CRM Solution",
-      description:
-        "Empower your sales team with a comprehensive CRM system designed to streamline customer interactions and boost productivity.",
-      image: "/Screenshot 2025-03-20 114617.png?height=300&width=500",
-      category: "liveNet",
-      technologies: ["JavaScript", "HTML", "Bootstrap", "AI Integration"],
-      live: "https://crm-demo.vercel.app",
-      liveProject: true,
-      videoUrl: "/Sales.mp4",
-      longDescription:
-        "Our CRM system is tailored to meet the needs of modern sales teams, offering a suite of tools to manage customer relationships effectively. With features like contact management, opportunity tracking, task scheduling, and detailed reporting, your team can stay organized and focused on closing deals. Built on a robust backend and a dynamic frontend, this CRM delivers a seamless and responsive user experience. It integrates smoothly with JavaScript, ensuring data security and reliability. Whether you're tracking leads or analyzing sales performance, our CRM system provides the insights and functionality you need to drive success.",
-    },
+  id: "net3",
+  title: "Advanced CRM Solution",
+  description:
+    "Empower your sales team with a comprehensive CRM system designed to streamline customer interactions and boost productivity.",
+  image: "/Screenshot 2025-03-20 114617.png?height=300&width=500",
+  category: "liveNet",
+  technologies: [".NET MVC", "Entity Framework Core", "AI Integration", "JavaScript", "HTML", "Bootstrap"],
+  live: "https://crm-demo.vercel.app",
+  liveProject: true,
+  videoUrl: "/Sales.mp4",
+  longDescription:
+    "This AI-powered CRM system is built using .NET MVC for structured and scalable application development, with Entity Framework Core enabling seamless and efficient database interactions. By integrating AI capabilities for predictive analytics and intelligent automation, it significantly boosts customer engagement and sales performance. The backend is powered by .NET, ensuring enterprise-level security, reliability, and scalability, while the frontend remains dynamic and responsive for an optimal user experience. Leveraging machine learning models, the system provides features like lead scoring, sentiment analysis, and trend forecasting—equipping businesses with actionable, data-driven insights. With EF Core, data persistence, query optimization, and transaction handling are streamlined, supporting complex operations in real time. Whether managing customer data, streamlining communication, or automating workflows, this CRM delivers next-gen intelligence and enterprise-grade efficiency.",
+},
     {
       id: "companyPages",
       title: "Official Company Website",
