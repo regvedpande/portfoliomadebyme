@@ -53,7 +53,7 @@ export default function Experience() {
       "title": "Associate Software Developer",
       "company": "MKP IT Services Private Limited",
       "location": "Nagpur, Maharashtra",
-      "period": "October 2023 - June 2024",
+      "period": "December 2023 - May 2024",
       "description": "Built CRM and inventory systems using .NET 6, ASP.NET MVC, Entity Framework Core, and SQL Server. Designed secure, modular backend components with Razor Pages and JWT authentication, supporting real-time updates, validations, and reporting in Agile delivery cycles.",
       "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "Razor Pages", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
     },
