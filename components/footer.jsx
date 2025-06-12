@@ -146,7 +146,7 @@ export default function Footer() {
               Technologies
             </Typography>
             <Box component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>
-              {[".NET", "Java", "Python", "AI & ML", "Web Development"].map((item) => (
+              {[".NET", "AI & ML", "Web Development"].map((item) => (
                 <Box component="li" key={item} sx={{ mb: 1 }}>
                   <Link
                     href="#"
