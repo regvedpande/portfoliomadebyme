@@ -42,6 +42,14 @@ export default function Experience() {
 
   const experiences = [
     {
+      "title": "Support Consultant",
+      "company": "Datamatics Global Services Limited",
+      "location": "Mumbai, Maharashtra",
+      "period": "June 2025 – Present",
+      "description": "Debugged and resolved 400+ high-priority customer issues in a WCF-based enterprise motor claims platform, ensuring 98% adherence to SLAs for 100,000+ annual claims. Leveraged advanced MSSQL queries and .NET optimizations to streamline issue resolution, reducing ticket resolution time by 20% and enhancing system reliability.",
+      "skills": ["Debugging", "MSSQL", ".NET Optimization", "WCF Services", "Ticket Resolution", "Performance Tuning"]
+    },
+    {
       "title": "Software Developer",
       "company": "Cylsys Software Solution Private Limited",
       "location": "Narsinghpur, Madhya Pradesh",
@@ -56,15 +64,7 @@ export default function Experience() {
       "period": "December 2023 - May 2024",
       "description": "Built CRM and inventory systems using .NET 6, ASP.NET MVC, Entity Framework Core, and SQL Server. Designed secure, modular backend components with Razor Pages and JWT authentication, supporting real-time updates, validations, and reporting in Agile delivery cycles.",
       "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "Razor Pages", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
-    },
-    {
-      "title": "Technology Associate",
-      "company": "Acmegrade Private Limited",
-      "location": "Bengaluru, Karnataka",
-      "period": "January 2023 - March 2023",
-      "description": "Improved operations by 18% through advanced data analytics using Python and Excel. Delivered AI-powered insights to executives, securing 3 tech partnerships and contributing to a 15% revenue uplift through strategic reporting and automation.",
-      "skills": ["Data Analytics", "Python", "AI Insights", "Microsoft Excel", "Automation", "Business Intelligence"]
-    }
+    }   
 
   ]
 

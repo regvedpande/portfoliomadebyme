@@ -57,7 +57,7 @@ export default function Skills() {
       category: ".NET & C# Development",
     },
     {
-      name: "SignalR - Real-time",
+      name: "WCF",
       icon: <NetworkIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: ".NET & C# Development",

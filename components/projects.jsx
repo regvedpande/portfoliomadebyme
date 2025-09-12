@@ -161,6 +161,19 @@ export default function Projects() {
   const projects = [
     // .NET Projects
     {
+      id: "companyPages",
+      title: "Reliance Motor Claims System Support",
+      description: "Debugged and optimized a high-volume WCF-based motor claims platform, ensuring seamless operations and enhanced performance.",
+      image: "/reliance.jpg?height=300&width=500",
+      category: "officialWebsite",
+      technologies: ["MSSQL", ".NET", "WCF Services", "Debugging", "Performance Tuning", "SOAP"],
+      live: "https://your-company-website.com",
+      liveProject: true,
+      videoUrl: "",
+      "longDescription":
+      "Provided expert support for the enterprise-scale Reliance Motor Claims platform, resolving 400+ high-priority tickets and ensuring 98% SLA compliance for 100,000+ annual claims. Utilized advanced MSSQL queries and .NET optimizations to reduce ticket resolution time by 20%, improving system reliability and performance. Worked extensively with WCF services and SOAP protocols to maintain seamless operations for mission-critical insurance workflows."
+  },
+    {
       id: "net1",
       title: "UTI Compliance and Declaration System",
       description:
@@ -212,19 +225,6 @@ export default function Projects() {
   longDescription:
     "This AI-powered CRM system is built using .NET MVC for structured and scalable application development, with Entity Framework Core enabling seamless and efficient database interactions. By integrating AI capabilities for predictive analytics and intelligent automation, it significantly boosts customer engagement and sales performance. The backend is powered by .NET, ensuring enterprise-level security, reliability, and scalability, while the frontend remains dynamic and responsive for an optimal user experience. Leveraging machine learning models, the system provides features like lead scoring, sentiment analysis, and trend forecasting—equipping businesses with actionable, data-driven insights. With EF Core, data persistence, query optimization, and transaction handling are streamlined, supporting complex operations in real time. Whether managing customer data, streamlining communication, or automating workflows, this CRM delivers next-gen intelligence and enterprise-grade efficiency.",
 },
-    {
-      id: "companyPages",
-      title: "Official Company Website",
-      description: "A professional website showcasing our company's services and portfolio.",
-      image: "/Screenshot 2025-03-20 122335.png?height=300&width=500",
-      category: "officialWebsite",
-      technologies: ["HTML", "Bootstrap", "JavaScript", "CSS"],
-      live: "https://your-company-website.com",
-      liveProject: true,
-      videoUrl: "",
-      longDescription:
-        "Our official company website is designed to provide a seamless user experience with a modern and responsive layout. Built using HTML, Bootstrap, and JavaScript, it features service descriptions, client testimonials, a contact form, and an interactive portfolio. The website ensures accessibility and performance optimization to enhance user engagement.",
-    },
     {
       id: "net5",
       title: "NextGen Secure API",
