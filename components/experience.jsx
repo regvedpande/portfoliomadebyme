@@ -42,12 +42,12 @@ export default function Experience() {
 
   const experiences = [
     {
-      "title": "Support Consultant",
+      "title": "Software Developer",
       "company": "Datamatics Global Services Limited",
       "location": "Mumbai, Maharashtra",
       "period": "June 2025 – Present",
-      "description": "Debugged and resolved 400+ high-priority customer issues in a WCF-based enterprise motor claims platform, ensuring 98% adherence to SLAs for 100,000+ annual claims. Leveraged advanced MSSQL queries and .NET optimizations to streamline issue resolution, reducing ticket resolution time by 20% and enhancing system reliability.",
-      "skills": ["Debugging", "MSSQL", ".NET Optimization", "WCF Services", "Ticket Resolution", "Performance Tuning"]
+      "description": "Worked on Reliance General Insurance’s Motor Plus platform, focusing on document upload and analysis using ASP.NET Core and MSSQL. Developed secure file handling logic and integrated REST APIs for document validation and metadata extraction. Resolved production issues by debugging .NET backend services and optimizing SQL queries. Handled JIRA support tickets, contributed to RCA documentation, and delivered sprint-based fixes to improve system reliability.",
+      "skills": ["ASP.NET Core", "MSSQL", "REST API Integration", "Document Handling", "Debugging", ".NET Optimization", "JIRA", "RCA Analysis", "SQL Query Optimization", "System Reliability"]
     },
     {
       "title": "Software Developer",

@@ -163,10 +163,19 @@ export default function Projects() {
     {
       id: "companyPages",
       title: "Reliance Motor Claims System Support",
-      description: "Debugged and optimized a high-volume WCF-based motor claims platform, ensuring seamless operations and enhanced performance.",
+      description: "Worked on Reliance General Insurance’s Motor Plus platform, focusing on document upload and analysis using ASP.NET Core and MSSQL, ensuring secure file handling and system reliability.",
       image: "/reliance.jpg?height=300&width=500",
       category: "officialWebsite",
-      technologies: ["MSSQL", ".NET", "WCF Services", "Debugging", "Performance Tuning", "SOAP"],
+      "technologies": [
+        "ASP.NET Core",
+        "MSSQL",
+        "REST API",
+        "Document Handling",
+        "Debugging",
+        ".NET Optimization",
+        "JIRA",
+        "SQL Query Optimization"
+      ],
       live: "https://your-company-website.com",
       liveProject: true,
       videoUrl: "",
