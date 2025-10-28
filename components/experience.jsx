@@ -42,13 +42,26 @@ export default function Experience() {
 
   const experiences = [
     {
-      "title": "Software Developer",
-      "company": "Datamatics Global Services Limited",
-      "location": "Mumbai, Maharashtra",
-      "period": "June 2025 – Present",
-      "description": "Worked on Reliance General Insurance’s Motor Plus platform, focusing on document upload and analysis using ASP.NET Core and MSSQL. Developed secure file handling logic and integrated REST APIs for document validation and metadata extraction. Resolved production issues by debugging .NET backend services and optimizing SQL queries. Handled JIRA support tickets, contributed to RCA documentation, and delivered sprint-based fixes to improve system reliability.",
-      "skills": ["ASP.NET Core", "MSSQL", "REST API Integration", "Document Handling", "Debugging", ".NET Optimization", "JIRA", "RCA Analysis", "SQL Query Optimization", "System Reliability"]
-    },
+  "title": "Software Developer",
+  "company": "Datamatics Global Services Limited",
+  "location": "Mumbai, Maharashtra",
+  "period": "June 2025 – Present",
+  "description": "Contributed to the development of Reliance General Insurance’s Motor Plus platform, a document processing system for insurance claims built with ASP.NET Core and MSSQL. Designed and implemented secure file upload and validation workflows using ASP.NET Core Web API and RESTful services. Developed and optimized MSSQL stored procedures for extracting and validating document metadata. Debugged backend services to resolve production issues and enhance query performance. Collaborated in Agile sprints to address JIRA tickets, perform RCA documentation, and deliver timely fixes. Integrated third-party APIs to streamline document processing and ensure seamless claim workflows.",
+  "skills": [
+    "ASP.NET Core",
+    "C#",
+    "MSSQL",
+    "REST API",
+    "Entity Framework Core",
+    "Postman",
+    "Git",
+    "JIRA",
+    "Agile/Scrum",
+    "RCA Analysis",
+    "SQL Query Optimization",
+    "System Reliability"
+  ]
+},
     {
       "title": "Software Developer",
       "company": "Cylsys Software Solution Private Limited",

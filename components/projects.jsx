@@ -163,7 +163,7 @@ export default function Projects() {
     {
       id: "companyPages",
       title: "Reliance Motor Claims System Support",
-      description: "Worked on Reliance General Insurance’s Motor Plus platform, focusing on document upload and analysis using ASP.NET Core and MSSQL, ensuring secure file handling and system reliability.",
+      description: "Contributed to Reliance General Insurance’s Motor Plus platform, a document processing system for insurance claims built with ASP.NET Core and MSSQL, focusing on secure file handling and backend optimization.",
       image: "/reliance.jpg?height=300&width=500",
       category: "officialWebsite",
       "technologies": [
@@ -179,9 +179,8 @@ export default function Projects() {
       live: "https://your-company-website.com",
       liveProject: true,
       videoUrl: "",
-      "longDescription":
-      "Provided expert support for the enterprise-scale Reliance Motor Claims platform, resolving 400+ high-priority tickets and ensuring 98% SLA compliance for 100,000+ annual claims. Utilized advanced MSSQL queries and .NET optimizations to reduce ticket resolution time by 20%, improving system reliability and performance. Worked extensively with WCF services and SOAP protocols to maintain seamless operations for mission-critical insurance workflows."
-  },
+      "longDescription":"Designed and implemented secure file upload and validation workflows using ASP.NET Core Web API and RESTful services. Developed and optimized MSSQL stored procedures for extracting and validating document metadata. Debugged backend services to resolve production issues and enhance query performance. Collaborated in Agile sprints to address JIRA tickets, perform RCA documentation, and deliver timely fixes. Integrated third-party APIs to streamline document processing and ensure seamless claim workflows."
+},
     {
       id: "net1",
       title: "UTI Compliance and Declaration System",
