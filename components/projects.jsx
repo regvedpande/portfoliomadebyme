@@ -163,29 +163,29 @@ export default function Projects() {
     {
       id: "companyPages",
       title: "Reliance Motor Claims System Support",
-      description: "Contributed to Reliance General Insurance’s Motor Plus platform, a document processing system for insurance claims built with ASP.NET Core and MSSQL, focusing on secure file handling and backend optimization.",
+      description: "ASP.NET Core Web API and WCF/SOAP-based motor claims platform at Datamatics, processing 10,000+ annual claims across Own Damage, Personal Accident, and Theft lifecycles with BizTalk middleware and Azure Functions daily reporting.",
       image: "/reliance.jpg?height=300&width=500",
       category: "officialWebsite",
       "technologies": [
         "ASP.NET Core",
-        "MSSQL",
+        "WCF/SOAP",
+        "IIS",
+        "Azure Functions",
+        "BizTalk",
+        "SQL Server",
         "REST API",
-        "Document Handling",
-        "Debugging",
-        ".NET Optimization",
-        "JIRA",
-        "SQL Query Optimization"
+        "GitHub Copilot"
       ],
       live: "https://your-company-website.com",
       liveProject: true,
       videoUrl: "",
-      "longDescription":"Designed and implemented secure file upload and validation workflows using ASP.NET Core Web API and RESTful services. Developed and optimized MSSQL stored procedures for extracting and validating document metadata. Debugged backend services to resolve production issues and enhance query performance. Collaborated in Agile sprints to address JIRA tickets, perform RCA documentation, and deliver timely fixes. Integrated third-party APIs to streamline document processing and ensure seamless claim workflows."
+      "longDescription":"Develop and maintain ASP.NET Core Web API modules on the Reliance Motor Claims platform, handling Own Damage, Personal Accident, and Theft claim lifecycle across 10,000+ annual claims. Designed WCF services hosted on IIS with basicHttpBinding and wsHttpBinding for SOAP-based data exchange with 3 insurer systems, 50+ surveyor portals, and 200+ garages, connected via BizTalk middleware for message routing and error handling. Built 4 Azure Functions on daily schedules to generate claims reports for 200+ garages, replacing a manual Excel-based process. Used GitHub Copilot and Claude for rapid stored procedure scaffolding and API boilerplate generation, cutting feature delivery time by 20%."
 },
     {
       id: "net1",
       title: "UTI Compliance and Declaration System",
       description:
-        "A robust platform for managing employee declarations and compliance at Mutual Fund. It features modules for anti-fraud declarations, NDAs, and compliance forms, ensuring data security and efficiency.",
+        "8 compliance and declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund built with ASP.NET Core 5 MVC, ADO.NET, Dapper, and PostgreSQL, with fiscal-year eligibility logic and structured audit trail logging.",
       image: "/uti-mutual-fund.png?height=300&width=500",
       category: "net",
       technologies: [
@@ -203,13 +203,13 @@ export default function Projects() {
       liveProject: true,
       videoUrl: "",
       longDescription:
-        "A comprehensive platform designed to manage employee declarations and compliance within UTI Mutual Fund. This system integrates multiple modules for handling anti-fraud declarations, non-disclosure agreements, and other compliance-related forms. Built using ASP.NET MVC, PostgreSQL, and Dapper, it ensures data integrity, security, and operational efficiency. The system supports user authentication, form submissions, and eligibility checks, providing a robust solution for HR and compliance management.",
+        "Built 8 compliance and declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund using ASP.NET Core 5 MVC with ADO.NET and Dapper for PostgreSQL. Implemented fiscal-year submission eligibility checks, structured audit trail logging, and role-based admin reporting. Coordinated with UTI and Nuvama teams to maintain 99.5% uptime over 9 months of operation.",
     },
     {
       id: "net2",
       title: "Nuvama Manual Invocation System",
       description:
-        "A sophisticated platform for managing manual invocation processes in financial services, featuring robust API integration and secure authentication.",
+        "12+ RESTful APIs with ADO.NET and SQL Server for Nuvama's financial transactions system, handling role-based approval workflows for account makers, checkers, and risk approvers, with file upload/download, ZIP compression, and token-based auth middleware.",
       image: "/Nuvama-Wealth-Management.jpg?height=300&width=500",
       category: "net",
       technologies: [".NET Core", "C#", "SQL Server", "Dapper", "Azure", "Bearer Token Authentication", "RESTful API"],
@@ -217,7 +217,7 @@ export default function Projects() {
       liveProject: true,
       videoUrl: "",
       longDescription:
-        "The Manual Invocation System is designed to streamline the manual invocation process for financial instruments, providing a comprehensive solution for handling invocation requests, approvals, and data management. The system features a robust RESTful API secured with Bearer token authentication, enabling seamless integration with external financial applications and services. Key functionalities include user authentication, detailed logging, and efficient data handling through Dapper and PostgreSQL. The API supports various endpoints for managing invocation requests, updating approval statuses, and retrieving detailed data, ensuring efficient and secure data exchange. The system's architecture is designed for scalability and maintainability, making it a reliable tool for financial institutions.",
+        "Developed 12+ RESTful APIs with ADO.NET and SQL Server for the Nuvama financial transactions system, handling invocation requests and role-based approval workflows for account makers, checkers, and risk approvers. Implemented file upload/download with ZIP compression, token-based auth middleware, structured logging with Serilog, and health-check endpoints. Maintained 99.5% uptime over 9 months coordinating across UTI and Nuvama teams.",
     },
     {
   id: "net3",

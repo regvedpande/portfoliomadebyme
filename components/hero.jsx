@@ -114,7 +114,9 @@ export default function Hero() {
       component="section"
       sx={{
         position: "relative",
-        py: { xs: 10, md: 15 },
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
         overflow: "hidden",
         background: (theme) => theme.palette.background.default,
       }}
@@ -418,7 +420,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  1.6+
+                  2+
                 </Box>
               </motion.div>
 

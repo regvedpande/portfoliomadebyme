@@ -139,42 +139,42 @@ export default function Skills() {
       category: "Database, ORM & Cloud Services",
     },
 
-    // Python AI/ML Skills (kept as requested)
+    // Architecture & Tools
     {
-      name: "Python",
+      name: "CQRS & MediatR",
+      icon: <WorkflowIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "Clean Architecture",
+      icon: <LayersIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "Docker",
       icon: <ServerIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
+      category: "Architecture & Tools",
     },
     {
-      name: "Machine Learning",
-      icon: <BrainIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
-    },
-    {
-      name: "Deep Learning",
-      icon: <NetworkIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
-    },
-    {
-      name: "NLP",
-      icon: <BotIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
-    },
-    {
-      name: "TensorFlow/PyTorch",
-      icon: <DatasetIcon fontSize="medium" />,
-      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
-    },
-    {
-      name: "Data Analysis",
+      name: "Serilog & Logging",
       icon: <AnalyticsIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
-      category: "Python",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "SignalR",
+      icon: <NetworkIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "xUnit & Testing",
+      icon: <BotIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
     },
   ]
 
@@ -412,7 +412,7 @@ export default function Skills() {
             </motion.div>
           </Grid>
 
-          {/* Python AI/ML Skills */}
+          {/* Architecture & Tools Skills */}
           <Grid item xs={12} md={6} lg={3}>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -430,13 +430,13 @@ export default function Skills() {
                   fontWeight: 600,
                 }}
               >
-                <BrainIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
-                Python AI/ML
+                <LayersIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
+                Architecture & Tools
               </Typography>
 
               <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
                 {skills
-                  .filter((skill) => skill.category === "Python")
+                  .filter((skill) => skill.category === "Architecture & Tools")
                   .map((skill) => (
                     <motion.div key={skill.name} variants={item} whileHover={{ x: 5 }}>
                       <Paper
@@ -505,10 +505,10 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    16+
+                    2+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    Months .NET
+                    Years .NET
                   </Typography>
                 </Box>
               </Grid>
@@ -547,10 +547,10 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    3+
+                    4
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    Months ML/AI
+                    Clients
                   </Typography>
                 </Box>
               </Grid>

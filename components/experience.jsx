@@ -46,37 +46,50 @@ export default function Experience() {
   "company": "Datamatics Global Services Limited",
   "location": "Mumbai, Maharashtra",
   "period": "June 2025 – Present",
-  "description": "Contributed to the development of Reliance General Insurance’s Motor Plus platform, a document processing system for insurance claims built with ASP.NET Core and MSSQL. Designed and implemented secure file upload and validation workflows using ASP.NET Core Web API and RESTful services. Developed and optimized MSSQL stored procedures for extracting and validating document metadata. Debugged backend services to resolve production issues and enhance query performance. Collaborated in Agile sprints to address JIRA tickets, perform RCA documentation, and deliver timely fixes. Integrated third-party APIs to streamline document processing and ensure seamless claim workflows.",
+  "description": [
+    "Develop & maintain ASP.NET Core Web API modules on the Reliance Motor Claims platform, handling OD, PA, and Theft claim lifecycle across 10,000+ annual claims.",
+    "Designed WCF services on IIS (basicHttpBinding / wsHttpBinding) for SOAP-based exchange with 3 insurers, 50+ surveyor portals, and 200+ garages via BizTalk middleware.",
+    "Built 4 Azure Functions on daily schedules generating claims reports for 200+ garages, replacing a manual Excel-based process.",
+    "Used GitHub Copilot & Claude for stored procedure scaffolding and API boilerplate, cutting feature delivery time by 20%."
+  ],
   "skills": [
     "ASP.NET Core",
     "C#",
-    "MSSQL",
+    "WCF/SOAP",
+    "IIS",
+    "Azure Functions",
+    "BizTalk",
+    "SQL Server",
     "REST API",
-    "Entity Framework Core",
-    "Postman",
     "Git",
-    "JIRA",
     "Agile/Scrum",
-    "RCA Analysis",
     "SQL Query Optimization",
-    "System Reliability"
+    "GitHub Copilot"
   ]
 },
     {
       "title": "Software Developer",
       "company": "Cylsys Software Solution Private Limited",
       "location": "Narsinghpur, Madhya Pradesh",
-      "period": "July 2024 - April 2025",
-      "description": "Developed enterprise-grade applications including a compliance system for 200K+ users using .NET Core, ASP.NET MVC, Dapper, and PostgreSQL. Built secure RESTful APIs with ADO.NET and SQL Server for the Nuvama financial platform, integrated with JWT auth and Azure Load Balancer for 99.9% uptime.",
-      "skills": [".NET 5/6/8",".NET Core", "ASP.NET MVC", "Dapper", "ADO.NET", "PostgreSQL", "SQL Server", "JWT", "Azure", "RESTful APIs"]
+      "period": "July 2024 – March 2025",
+      "description": [
+        "Built 8 compliance & declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund using ASP.NET Core 5 MVC, ADO.NET, Dapper, and PostgreSQL with fiscal-year eligibility checks.",
+        "Developed 12+ RESTful APIs with ADO.NET and SQL Server for Nuvama's financial transactions system, handling role-based approval workflows for makers, checkers, and risk approvers.",
+        "Implemented file upload/download with ZIP compression, token-based auth middleware, Serilog structured logging, and health-check endpoints."
+      ],
+      "skills": ["ASP.NET Core 5", "ADO.NET", "Dapper", "PostgreSQL", "SQL Server", "JWT", "Serilog", "RESTful APIs", "Azure", ".NET 5/6/8"]
     },
     {
       "title": "Associate Software Developer",
       "company": "MKP IT Services Private Limited",
       "location": "Nagpur, Maharashtra",
       "period": "December 2023 - May 2024",
-      "description": "Built CRM and inventory systems using .NET 6, ASP.NET MVC, Entity Framework Core, and SQL Server. Designed secure, modular backend components with Razor Pages and JWT authentication, supporting real-time updates, validations, and reporting in Agile delivery cycles.",
-      "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "Razor Pages", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
+      "description": [
+        "Developed 5 CRM modules with ASP.NET MVC (.NET 6), Entity Framework Core, and a React dashboard using CQRS/MediatR, managing 50,000+ customer records across 3 departments.",
+        "Built 8 Inventory Management Web API endpoints with JWT role-based authorization, improving response times by 25% on read-heavy reporting endpoints.",
+        "Led refactoring of 15+ raw SQL queries to EF Core LINQ with code-first migrations, cutting query time by 20% on reporting pages."
+      ],
+      "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "CQRS", "MediatR", "React", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
     }   
 
   ]
@@ -202,9 +215,14 @@ export default function Experience() {
                         </Box>
                       </Box>
 
-                      <Typography variant="body2" color="text.secondary" paragraph sx={{ mb: 3, flexGrow: 1 }}>
-                        {exp.description}
-                      </Typography>
+                      <Box component="ul" sx={{ mb: 3, flexGrow: 1, pl: 2, m: 0, listStyle: "none" }}>
+                        {(Array.isArray(exp.description) ? exp.description : [exp.description]).map((point, i) => (
+                          <Box component="li" key={i} sx={{ display: "flex", alignItems: "flex-start", mb: 1 }}>
+                            <Box component="span" sx={{ mr: 1, mt: "3px", color: "primary.main", fontSize: "0.6rem", flexShrink: 0 }}>▸</Box>
+                            <Typography variant="body2" color="text.secondary">{point}</Typography>
+                          </Box>
+                        ))}
+                      </Box>
 
                       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: "auto" }}>
                         {exp.skills.map((skill) => (
