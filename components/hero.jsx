@@ -493,7 +493,7 @@ export default function Hero() {
               {
                 title: "For .NET Developer Profile",
                 description: "Based on my .Net Development skills and projects",
-                path: "/MyDotNetResume.pdf",
+                path: "/Resume (1).pdf",
               },
              
             ].map((resume, index) => (
