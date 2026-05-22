@@ -17,15 +17,15 @@ import {
 import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 
+const titles = [".NET Full Stack Developer", "ASP.NET Core Developer", "Enterprise Solutions Developer"]
+
 export default function Hero() {
   const ref = useRef(null)
   const theme = useTheme()
-  const [displayText, setDisplayText] = useState("Full-Stack Developer")
+  const [displayText, setDisplayText] = useState(".NET Full Stack Developer")
   const [titleIndex, setTitleIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [openResumeDialog, setOpenResumeDialog] = useState(false)
-
-  const titles = ["Full-Stack Developer", "Software Developer", "Dot Net Developer"]
 
   // Typewriter effect
   useEffect(() => {
@@ -185,7 +185,7 @@ export default function Hero() {
                     textAlign: { xs: "center", lg: "left" }, // Ensure proper alignment
                   }}
                 >
-                  .NET Developer focused on building secure, scalable, and high-performance enterprise applications.
+                  ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering mission-critical enterprise platforms for insurance, compliance, and CRM clients.
                 </Typography>
               </motion.div>
 
@@ -380,6 +380,7 @@ export default function Hero() {
                       <img
                         src="/WhatsApp Image 2025-03-18 at 20.51.59_31b61cd3.jpg?height=400&width=400"
                         alt="Developer Portrait"
+                        fetchpriority="high"
                         style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
                       />
                     </Box>
@@ -420,7 +421,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  2+
+                  2.5+
                 </Box>
               </motion.div>
 
@@ -493,7 +494,7 @@ export default function Hero() {
               {
                 title: "For .NET Developer Profile",
                 description: "Based on my .Net Development skills and projects",
-                path: "/Resume (1).pdf",
+                path: "/MyDotNetResume.pdf",
               },
              
             ].map((resume, index) => (

@@ -165,7 +165,7 @@ export default function Projects() {
       title: "Reliance Motor Claims System Support",
       description: "ASP.NET Core Web API and WCF/SOAP-based motor claims platform at Datamatics, processing 10,000+ annual claims across Own Damage, Personal Accident, and Theft lifecycles with BizTalk middleware and Azure Functions daily reporting.",
       image: "/reliance.jpg?height=300&width=500",
-      category: "officialWebsite",
+      category: "net",
       "technologies": [
         "ASP.NET Core",
         "WCF/SOAP",
@@ -221,12 +221,12 @@ export default function Projects() {
     },
     {
   id: "net3",
-  title: "Advanced CRM Solution",
+  title: "Perfect Pitch CRM",
   description:
-    "Empower your sales team with a comprehensive CRM system designed to streamline customer interactions and boost productivity.",
+    "Full-stack CRM with CQRS/MediatR backend and React + Bootstrap dashboard serving 50,000+ customer records with real-time SignalR notifications and sales pipeline tracking across 3 departments.",
   image: "/Screenshot 2025-03-20 114617.png?height=300&width=500",
-  category: "liveNet",
-  technologies: [".NET MVC", "Entity Framework Core", "AI Integration", "JavaScript", "HTML", "Bootstrap"],
+  category: "net",
+  technologies: [".NET 6", "React", "Bootstrap", "CQRS/MediatR", "SignalR", "EF Core", "Azure App Service", "GitHub Actions"],
   live: "https://crm-demo.vercel.app",
   liveProject: true,
   videoUrl: "/Sales.mp4",
@@ -459,7 +459,7 @@ export default function Projects() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              Over the past 2 years, I've worked with various clients, delivering impactful solutions across a range of technologies, showcasing my adaptability and commitment to excellence.
+              Over the past 2.5+ years, I've worked with various clients, delivering impactful solutions across a range of technologies, showcasing my adaptability and commitment to excellence.
             </Typography>
           </Box>
         </motion.div>
@@ -698,6 +698,7 @@ export default function Projects() {
                           height="180"
                           image={project.image}
                           alt={project.title}
+                          loading="lazy"
                           sx={{
                             transition: "transform 0.3s ease",
                             objectFit: "cover",

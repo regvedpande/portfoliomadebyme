@@ -58,12 +58,12 @@ export default function Footer() {
               </Link>
             </Box>
             <Typography variant="body2" color="text.secondary" paragraph>
-              Building innovative solutions with modern technologies.
+              ASP.NET Core 8 Full Stack Developer building secure, scalable enterprise applications.
             </Typography>
             <Box sx={{ display: "flex", gap: 2 }}>
               <IconButton
                 component="a"
-                href="https://github.com"
+                href="https://github.com/regvedpande"
                 target="_blank"
                 rel="noopener noreferrer"
                 size="small"
@@ -80,7 +80,7 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/regved-pande"
                 target="_blank"
                 rel="noopener noreferrer"
                 size="small"
@@ -97,7 +97,7 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 component="a"
-                href="mailto:example@example.com"
+                href="mailto:regregd@outlook.com"
                 size="small"
                 sx={{
                   color: "text.secondary",
@@ -181,7 +181,7 @@ export default function Footer() {
               </Box>
               <Box component="li" sx={{ mb: 1 }}>
                 <Link
-                  href="mailto:example@example.com"
+                  href="mailto:regregd@outlook.com"
                   underline="hover"
                   color="text.secondary"
                   sx={{

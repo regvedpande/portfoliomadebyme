@@ -292,7 +292,7 @@ export default function Contact() {
                     </IconButton>
                     <IconButton
                       component="a"
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/regved-pande-740a632b5"
                       target="_blank"
                       rel="noopener noreferrer"
                       sx={{

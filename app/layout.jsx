@@ -8,9 +8,9 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Regved Pande | Full-Stack Developer",
+  title: "Regved Pande | .NET Full Stack Developer",
   description:
-    "Professional portfolio of Regved Pande, showcasing expertise in .NET, Java, Python, and AI/ML technologies",
+    "Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development.",
     generator: 'v0.dev'
 }
 
@@ -27,13 +27,13 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Professional portfolio of Regved Pande, showcasing expertise in .NET, Java, Python, and AI/ML technologies"
+          content="Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development."
         />
-        <meta name="keywords" content="Regved Pande, Full-Stack Developer, .NET, Java, Python, AI/ML, Portfolio" />
+        <meta name="keywords" content="Regved Pande, .NET Developer, ASP.NET Core, C#, WCF, BizTalk, Azure, Clean Architecture, CQRS, Portfolio" />
         <meta property="og:title" content="Regved Pande | Full-Stack Developer" />
         <meta
           property="og:description"
-          content="Professional portfolio of Regved Pande, showcasing expertise in .NET, Java, Python, and AI/ML technologies"
+          content="Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development."
         />
         <meta property="og:type" content="website" />
       </head>
@@ -52,5 +52,3 @@ export default function RootLayout({ children }) {
 }
 
 
-
-import './globals.css'

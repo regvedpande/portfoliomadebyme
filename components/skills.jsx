@@ -62,6 +62,18 @@ export default function Skills() {
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: ".NET & C# Development",
     },
+    {
+      name: "ADO.NET",
+      icon: <DataObjectIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
+    {
+      name: "Blazor",
+      icon: <CodeIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: ".NET & C# Development",
+    },
 
     // Web API & ASP.NET Core Skills (previously ASP.NET)
     {
@@ -98,6 +110,18 @@ export default function Skills() {
       name: "Dependency Injection",
       icon: <WorkflowIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(29, 29, 29)" : "rgb(210, 210, 210)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "BizTalk Server",
+      icon: <WorkflowIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Web API & ASP.NET Core",
+    },
+    {
+      name: "Swagger / OpenAPI",
+      icon: <ApiIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
       category: "Web API & ASP.NET Core",
     },
 
@@ -138,6 +162,18 @@ export default function Skills() {
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: "Database, ORM & Cloud Services",
     },
+    {
+      name: "Azure Functions",
+      icon: <CloudIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Database, ORM & Cloud Services",
+    },
+    {
+      name: "Stored Procedures",
+      icon: <DatabaseIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Database, ORM & Cloud Services",
+    },
 
     // Architecture & Tools
     {
@@ -173,6 +209,18 @@ export default function Skills() {
     {
       name: "xUnit & Testing",
       icon: <BotIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "GitHub Copilot",
+      icon: <BotIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "Claude AI & Semantic Kernel",
+      icon: <BrainIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: "Architecture & Tools",
     },
@@ -459,8 +507,7 @@ export default function Skills() {
                           },
                         }}
                       >
-                        <Box sx={{ mr: 2, color: theme.palette.primary.main }}>{skill.icon}</Box>
-                        <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                        <Typography variant="body1" sx={{ fontWeight: 600 }}>
                           {skill.name}
                         </Typography>
                       </Paper>
@@ -505,7 +552,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    2+
+                    2.5+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Years .NET
