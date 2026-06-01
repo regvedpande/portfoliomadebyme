@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Regved Pande | .NET Full Stack Developer",
   description:
-    "Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development.",
+    "Portfolio of Regved Pande - .NET Full Stack Developer with 2+ years building ASP.NET Core Web APIs, Azure-hosted services, React front ends, SQL Server workflows, WCF/SOAP integrations, BizTalk routing, and AI-assisted delivery for insurance, fintech, compliance, and CRM platforms.",
     generator: 'v0.dev'
 }
 
@@ -27,13 +27,13 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development."
+          content="Portfolio of Regved Pande - .NET Full Stack Developer with 2+ years building ASP.NET Core Web APIs, Azure-hosted services, React front ends, SQL Server workflows, WCF/SOAP integrations, BizTalk routing, and AI-assisted delivery for insurance, fintech, compliance, and CRM platforms."
         />
-        <meta name="keywords" content="Regved Pande, .NET Developer, ASP.NET Core, C#, WCF, BizTalk, Azure, Clean Architecture, CQRS, Portfolio" />
+        <meta name="keywords" content="Regved Pande, .NET Full Stack Developer, ASP.NET Core, C#, React, SQL Server, EF Core, WCF, SOAP, BizTalk, Azure Functions, Semantic Kernel, Portfolio" />
         <meta property="og:title" content="Regved Pande | Full-Stack Developer" />
         <meta
           property="og:description"
-          content="Portfolio of Regved Pande - ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering enterprise insurance, compliance, and CRM platforms. Expert in Clean Architecture, CQRS, WCF, BizTalk, Azure, and AI-augmented development."
+          content="Portfolio of Regved Pande - .NET Full Stack Developer with 2+ years building ASP.NET Core Web APIs, Azure-hosted services, React front ends, SQL Server workflows, WCF/SOAP integrations, BizTalk routing, and AI-assisted delivery for insurance, fintech, compliance, and CRM platforms."
         />
         <meta property="og:type" content="website" />
       </head>
@@ -50,5 +50,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
-
 

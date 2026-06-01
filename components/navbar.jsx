@@ -339,7 +339,7 @@ export default function Navbar() {
             {[
                {
                 title: "For .NET Developer Profile",
-                description: "Based on my .Net Development skills and projects",
+                description: "Focused on ASP.NET Core, Azure, SQL Server, React, and enterprise client delivery",
                 path: "/MyDotNetResume.pdf",
               },
             ].map((resume, index) => (

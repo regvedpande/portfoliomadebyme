@@ -53,12 +53,12 @@ export default function Footer() {
                   />
                 </Box>
                 <Typography variant="h6" component="span" fontWeight="bold">
-                  Regved's Portfolio
+                  Regved Pande
                 </Typography>
               </Link>
             </Box>
             <Typography variant="body2" color="text.secondary" paragraph>
-              ASP.NET Core 8 Full Stack Developer building secure, scalable enterprise applications.
+              .NET Full Stack Developer building ASP.NET Core APIs, Azure services, React dashboards, and secure enterprise integrations.
             </Typography>
             <Box sx={{ display: "flex", gap: 2 }}>
               <IconButton
@@ -176,7 +176,7 @@ export default function Footer() {
             <Box component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>
               <Box component="li" sx={{ mb: 1 }}>
                 <Typography variant="body2" color="text.secondary">
-                  Nagpur, Maharashtra
+                  Nagpur, India - Open to Remote / Relocation
                 </Typography>
               </Box>
               <Box component="li" sx={{ mb: 1 }}>
@@ -197,7 +197,7 @@ export default function Footer() {
               </Box>
               <Box component="li">
                 <Link
-                  href="tel:+15551234567"
+                  href="tel:+919049874883"
                   underline="hover"
                   color="text.secondary"
                   sx={{
@@ -224,4 +224,3 @@ export default function Footer() {
     </Box>
   )
 }
-

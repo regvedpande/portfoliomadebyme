@@ -162,106 +162,111 @@ export default function Projects() {
     // .NET Projects
     {
       id: "companyPages",
-      title: "Reliance Motor Claims System Support",
-      description: "ASP.NET Core Web API and WCF/SOAP-based motor claims platform at Datamatics, processing 10,000+ annual claims across Own Damage, Personal Accident, and Theft lifecycles with BizTalk middleware and Azure Functions daily reporting.",
+      title: "Reliance Motor Claims Platform",
+      description: "End-to-end motor-claims processing across OD, Theft, and PA claim types, supporting 10,000+ claims a year from FNOL to garage settlement and payout.",
       image: "/reliance.jpg?height=300&width=500",
       category: "net",
       "technologies": [
-        "ASP.NET Core",
-        "WCF/SOAP",
+        "ASP.NET Core Web API",
+        "WebForms",
+        "WCF",
+        "SOAP",
         "IIS",
-        "Azure Functions",
         "BizTalk",
+        "Savvion BPM",
+        "Azure Functions",
+        "EF Core",
         "SQL Server",
-        "REST API",
-        "GitHub Copilot"
+        "GitHub Copilot",
+        "Claude"
       ],
       live: "https://your-company-website.com",
       liveProject: true,
       videoUrl: "",
-      "longDescription":"Develop and maintain ASP.NET Core Web API modules on the Reliance Motor Claims platform, handling Own Damage, Personal Accident, and Theft claim lifecycle across 10,000+ annual claims. Designed WCF services hosted on IIS with basicHttpBinding and wsHttpBinding for SOAP-based data exchange with 3 insurer systems, 50+ surveyor portals, and 200+ garages, connected via BizTalk middleware for message routing and error handling. Built 4 Azure Functions on daily schedules to generate claims reports for 200+ garages, replacing a manual Excel-based process. Used GitHub Copilot and Claude for rapid stored procedure scaffolding and API boilerplate generation, cutting feature delivery time by 20%."
+      "longDescription":"Developed and maintained ASP.NET Core Web APIs, WebForms, and Savvion BPM features for Reliance Motor Claims across OD, Theft, and PA claim types. Built and consumed WCF/SOAP services on IIS to integrate insurers, 50+ surveyor portals, and 200+ garages through BizTalk message routing and fault handling. Built 6 scheduled Azure Functions for daily claims reporting and reconciliation, then tuned high-volume SQL Server stored procedures and EF Core queries to deliver 30% faster report generation and 25% lower peak database load."
 },
     {
       id: "net1",
       title: "UTI Compliance and Declaration System",
       description:
-        "8 compliance and declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund built with ASP.NET Core 5 MVC, ADO.NET, Dapper, and PostgreSQL, with fiscal-year eligibility logic and structured audit trail logging.",
+        "8 fiscal-year compliance forms for UTI Mutual Fund with a year-based eligibility engine, RBAC, audit logging, and validation rules aligned to regulatory workflows.",
       image: "/uti-mutual-fund.png?height=300&width=500",
       category: "net",
       technologies: [
-        ".NET Core",
+        "ASP.NET Core MVC",
+        "Razor Pages",
         "Dapper",
-        "Auth",
-        "JavaScript/jQuery",
-        "C#",
+        "ADO.NET",
         "PostgreSQL",
-        "Azure",
-        "Entity Framework",
+        "JWT",
+        "Serilog",
+        "RBAC",
+        "jQuery",
       ],
       live: "https://ecommerce-demo.vercel.app",
       featured: true,
       liveProject: true,
       videoUrl: "",
       longDescription:
-        "Built 8 compliance and declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund using ASP.NET Core 5 MVC with ADO.NET and Dapper for PostgreSQL. Implemented fiscal-year submission eligibility checks, structured audit trail logging, and role-based admin reporting. Coordinated with UTI and Nuvama teams to maintain 99.5% uptime over 9 months of operation.",
+        "Delivered 8 fiscal-year compliance and declaration forms for UTI Mutual Fund using ASP.NET Core MVC, Razor Pages, Dapper, and PostgreSQL. Built year-based submission eligibility, role-based access, validation rules, and audit logging so administrators could track form status, user actions, and compliance history with confidence.",
     },
     {
       id: "net2",
-      title: "Nuvama Manual Invocation System",
+      title: "Nuvama Financial Invocation System",
       description:
-        "12+ RESTful APIs with ADO.NET and SQL Server for Nuvama's financial transactions system, handling role-based approval workflows for account makers, checkers, and risk approvers, with file upload/download, ZIP compression, and token-based auth middleware.",
+        "12+ RESTful APIs powering a maker-checker-risk approval dashboard with audit trail, role-based access, and production-grade transaction workflow support.",
       image: "/Nuvama-Wealth-Management.jpg?height=300&width=500",
       category: "net",
-      technologies: [".NET Core", "C#", "SQL Server", "Dapper", "Azure", "Bearer Token Authentication", "RESTful API"],
+      technologies: ["ASP.NET Core Web API", "React", "SQL Server", "JWT", "ADO.NET", "Serilog", "xUnit", "Health Checks"],
       live: "https://healthcare-demo.vercel.app",
       liveProject: true,
       videoUrl: "",
       longDescription:
-        "Developed 12+ RESTful APIs with ADO.NET and SQL Server for the Nuvama financial transactions system, handling invocation requests and role-based approval workflows for account makers, checkers, and risk approvers. Implemented file upload/download with ZIP compression, token-based auth middleware, structured logging with Serilog, and health-check endpoints. Maintained 99.5% uptime over 9 months coordinating across UTI and Nuvama teams.",
+        "Built and deployed 12+ RESTful Web APIs for Nuvama's financial transactions platform with a React approval dashboard, SQL Server backend, JWT authentication, structured Serilog logging, health checks, and xUnit coverage. The system supported maker-checker-risk approvals, audit trail requirements, and 99.5% uptime during rollout.",
     },
     {
   id: "net3",
   title: "Perfect Pitch CRM",
   description:
-    "Full-stack CRM with CQRS/MediatR backend and React + Bootstrap dashboard serving 50,000+ customer records with real-time SignalR notifications and sales pipeline tracking across 3 departments.",
+    "Internal CRM with 5 modules, real-time SignalR notifications, and a live pipeline-tracking dashboard built on C#, .NET 6, EF Core, React, and SQL Server.",
   image: "/Screenshot 2025-03-20 114617.png?height=300&width=500",
   category: "net",
-  technologies: [".NET 6", "React", "Bootstrap", "CQRS/MediatR", "SignalR", "EF Core", "Azure App Service", "GitHub Actions"],
+  technologies: ["C#", ".NET 6", "ASP.NET Core", "EF Core", "React", "Bootstrap", "SignalR", "SQL Server", "GitHub Actions"],
   live: "https://crm-demo.vercel.app",
   liveProject: true,
   videoUrl: "/Sales.mp4",
   longDescription:
-    "This AI-powered CRM system is built using .NET MVC for structured and scalable application development, with Entity Framework Core enabling seamless and efficient database interactions. By integrating AI capabilities for predictive analytics and intelligent automation, it significantly boosts customer engagement and sales performance. The backend is powered by .NET, ensuring enterprise-level security, reliability, and scalability, while the frontend remains dynamic and responsive for an optimal user experience. Leveraging machine learning models, the system provides features like lead scoring, sentiment analysis, and trend forecasting—equipping businesses with actionable, data-driven insights. With EF Core, data persistence, query optimization, and transaction handling are streamlined, supporting complex operations in real time. Whether managing customer data, streamlining communication, or automating workflows, this CRM delivers next-gen intelligence and enterprise-grade efficiency.",
+    "Contributed to Perfect Pitch CRM during early .NET training, building UI components, CRUD features, REST API endpoints, JWT-secured workflows, and SQL Server queries with senior developer guidance. The work strengthened production habits around code reviews, EF Core LINQ, code-first migrations, Swagger documentation, Agile delivery, Git branching, pull requests, and GitHub Actions CI/CD.",
 },
     {
       id: "net5",
-      title: "NextGen Secure API",
-      description: "A robust, high-performance .NET API featuring advanced authentication and secure services.",
+      title: "Secure ASP.NET Core API Starter",
+      description: "A production-minded Web API starter focused on JWT authentication, Swagger/OpenAPI documentation, health checks, structured logging, and clean service boundaries.",
       image: "/agenda-analysis-business-plan-businessman.jpg?height=300&width=500",
       category: "net",
-      technologies: [".NET 6", "JWT", "Entity Framework Core", "PostgreSQL", "C#", "Swagger", "ASP.NET Core"],
+      technologies: [".NET 6", "ASP.NET Core", "JWT", "Entity Framework Core", "SQL Server", "Swagger", "Serilog", "xUnit"],
       github: "https://github.com/regvedpande/nextgenapi",
       live: "https://finance-tracker-demo.vercel.app",
       liveProject: false,
       videoUrl: "/Untitled video - Made with Clipchamp (5).mp4",
       longDescription:
-        "NextGen Secure API is a state-of-the-art backend solution built on .NET 6 and designed for modern financial institutions. It leverages robust, token-based authentication using JWT to ensure enterprise-grade security and user integrity. With advanced data access powered by Entity Framework Core and SQL Server, this API offers unmatched scalability and performance. Its microservices-inspired architecture ensures that it can easily integrate with diverse frontend systems while maintaining top-notch security practices. This project exemplifies modern software craftsmanship and is engineered to meet the demands of today's high-security, high-performance environments.",
+        "A secure ASP.NET Core API foundation that reflects the backend patterns used across my client work: token-based authentication, Swagger/OpenAPI documentation, EF Core data access, structured Serilog logs, health-check endpoints, and testable service boundaries. Built to demonstrate clean, practical API engineering rather than a throwaway demo.",
     },
     {
       id: "net6",
-      title: "Razor IoT : Real-Time Insight Platform",
+      title: "Razor Pages Real-Time Insight Platform",
       description:
-        "An avant-garde IoT solution built delivering real-time data, unmatched scalability, and a futuristic user experience.",
+        "A Razor Pages and SignalR prototype for real-time dashboards, cloud-ready events, secure helper services, and operational logging.",
       image: "/skw6fead.png?height=300&width=500",
       category: "net",
       technologies: [
         "Razor Pages",
         ".NET Core",
-        "CryptoHelper",
-        "Logger",
-        "Azure IoT",
-        "C#",
         "SignalR",
+        "Azure",
+        "Serilog",
+        "C#",
+        "Dependency Injection",
         "Entity Framework",
       ],
       github: "https://github.com/regvedpande/razoriot",
@@ -269,53 +274,53 @@ export default function Projects() {
       liveProject: false,
       videoUrl: "/Untitled video - Made with Clipchamp (6).mp4",
       longDescription:
-        "Razor IoT is a state-of-the-art real-time monitoring and control platform that leverages Razor Pages to deliver a sleek, responsive interface for managing connected devices. With cutting-edge technologies like SignalR for live updates and Azure IoT integration for robust cloud connectivity, this platform provides actionable insights and unparalleled scalability. Advanced crypto capabilities via CryptoHelper and comprehensive logging ensure secure and reliable operations. Designed to empower businesses and developers alike, Razor IoT sets a new benchmark in IoT innovation and performance.",
+        "A real-time dashboard prototype using Razor Pages, SignalR, EF Core, and Azure-ready service patterns. It highlights the same fundamentals I use in enterprise systems: dependency injection, secure helper services, operational logs, responsive server-rendered pages, and live updates that keep users close to changing data.",
     },
     {
       id: "net7",
-      title: "Inventory Management System",
-      description: "A system for tracking inventory levels, orders, sales, and deliveries for retail businesses.",
+      title: "Inventory Management API",
+      description: "A .NET API for inventory records, reporting endpoints, JWT role-based authorization, SQL Server queries, and Swagger-backed testing.",
       image: "/360_F_550146337_826DHUXoFx18MRTMUauX3fyRw9R7S1BO.jpg?height=300&width=500",
       category: "net",
-      technologies: [".NET 8", "C#", "SQL Server", ".Net MVC", "Elasticsearch"],
+      technologies: [".NET 8", "C#", "ASP.NET Core Web API", "SQL Server", "JWT", "Swagger", "LINQ"],
       github: "https://github.com/regvedpande/inventorymanagement",
       live: "https://document-management-demo.vercel.app",
       featured: false,
       liveProject: false,
       videoUrl: "Untitled video - Made with Clipchamp (2).mp4",
       longDescription:
-        "This inventory management system helps businesses track their stock levels, manage orders, and monitor sales and deliveries. It features real-time inventory updates, low-stock alerts, barcode scanning integration, and comprehensive reporting tools. The system is designed to be scalable and can be customized for different types of retail businesses.",
+        "A practical inventory API shaped around the backend tasks I handled during internship work: CRUD endpoints, JWT-secured access, SQL Server reporting queries, Swagger documentation, LINQ-based data access, and incremental performance improvements for read-heavy screens.",
     },
     {
       id: "net8",
-      title: "Healthcare Patient Portal",
+      title: "Role-Based Portal Prototype",
       description:
-        "A secure patient portal for healthcare providers with appointment scheduling and medical records access.",
+        "A secure portal concept demonstrating role-based access, protected records, API-first workflows, and Azure-ready deployment patterns.",
       image: "/istockphoto-1256189055-612x612.jpg?height=300&width=500",
       category: "net",
-      technologies: [".NET 7", "C#", "Entity Framework Core", "Identity Server", "HIPAA Compliance", "Azure"],
+      technologies: [".NET 7", "C#", "Entity Framework Core", "JWT", "Azure", "Repository Pattern"],
       github: "https://github.com/regvedpande/healthcareportal",
       live: "https://healthcare-portal-demo.vercel.app",
       featured: false,
       liveProject: false,
       videoUrl: "",
       longDescription:
-        "This healthcare patient portal provides a secure interface for patients to access their medical records, schedule appointments, and communicate with healthcare providers. Built with .NET 7 and Entity Framework Core, it ensures HIPAA compliance and data security. The system features role-based access control, secure messaging, appointment management, and integration with electronic health records systems.",
+        "A secure role-based portal prototype that demonstrates authenticated access, protected records, clean data boundaries, and Azure-ready architecture. The project mirrors the access-control thinking used in compliance and financial approval systems without positioning it as a live healthcare product.",
     },
     {
       id: "net9",
-      title: "E-Learning Management System",
-      description: "A comprehensive learning management system for educational institutions and corporate training.",
+      title: "Learning Management API Concept",
+      description: "A .NET and real-time communication concept for course workflows, progress tracking, SignalR updates, and identity-aware access.",
       image: "/angular9826.logowik.com.jpg?height=300&width=500",
       category: "net",
-      technologies: [".NET 6", "Angular", "SQL Server", "SignalR", "Azure Media Services", "Identity"],
+      technologies: [".NET 6", "React", "SQL Server", "SignalR", "Identity", "Azure"],
       github: "https://github.com/regvedpande/elearningplatform",
       live: "https://elearning-demo.vercel.app",
       featured: false,
       liveProject: false,
       videoUrl: "",
       longDescription:
-        "This E-Learning Management System provides a complete solution for creating, delivering, and managing educational content. Built with .NET 6 and Blazor, it offers features such as course creation, student enrollment, progress tracking, assessment tools, and real-time collaboration using SignalR. The platform supports video content delivery through Azure Media Services and includes features for discussion forums, assignment submission, and automated grading. It's designed to be scalable and can be customized for various educational contexts from K-12 to corporate training environments.",
+        "A learning-management concept used to explore .NET API design, React screens, SQL Server persistence, identity-aware access, and SignalR updates. It keeps the focus on architecture, API contracts, and workflow modeling rather than inflated feature claims.",
     },
 
     // Python/ML Projects - consolidated into one category
@@ -323,7 +328,7 @@ export default function Projects() {
       id: "python1",
       title: "CipherVault",
       description:
-        "A next-generation encryption and decryption web application that transforms your files into digital fortresses.",
+        "A Flask and React file-security project using AES encryption, PBKDF2 key derivation, and a practical workflow for protecting sensitive documents.",
       image: "/hq720.jpg?height=300&width=500",
       category: "python",
       technologies: ["Python", "Flask", "React", "Cryptography", "AES", "PBKDF2", "PyInstaller"],
@@ -332,12 +337,12 @@ export default function Projects() {
       featured: true,
       videoUrl: "DECRY(1).mp4",
       longDescription:
-        "CipherVault is a next-generation encryption and decryption web application designed to secure your most sensitive documents with enterprise-grade cryptography. Built with Flask and React, CipherVault leverages advanced AES encryption, robust key derivation, and modern security practices to transform your files into digital fortresses. Whether you're protecting confidential reports or personal files, CipherVault ensures that your data remains safe from prying eyes—making it the ultimate tool for secure file sharing in the modern cyber landscape.",
+        "CipherVault is a file encryption and decryption application built with Flask and React. It uses AES encryption, PBKDF2 key derivation, and a clean user flow for protecting documents, showing my interest in secure application patterns beyond the .NET ecosystem.",
     },
     {
       id: "python4",
       title: "Dream Journal Sentiment Analyzer API",
-      description: "An API that analyzes dream descriptions, detects sentiment, and provides quirky interpretations.",
+      description: "A FastAPI project that analyzes text sentiment, extracts lightweight themes, and returns structured responses through Pydantic models.",
       image: "/FastAPI_b.jpg?height=300&width=500",
       category: "python",
       technologies: ["Python", "FastAPI", "TextBlob", "NLTK", "Pydantic"],
@@ -345,12 +350,12 @@ export default function Projects() {
       live: "https://dream-analyzer-api-demo.vercel.app",
       videoUrl: "/Faster.mp4",
       longDescription:
-        "This Dream Journal Sentiment Analyzer API uses FastAPI to process user-submitted dream descriptions. It leverages TextBlob and NLTK for sentiment analysis and theme extraction, providing users with a sentiment score, dominant emotion, key themes, and a creative interpretation of their dreams.",
+        "A FastAPI-based text analysis project that processes user-submitted content, applies TextBlob and NLTK for sentiment/theme extraction, and returns typed Pydantic responses. It complements my API background with lightweight natural-language processing.",
     },
     {
       id: "python3",
       title: "Deep Learning Image Recognition API",
-      description: "A powerful deep learning-based image recognition API using TensorFlow, OpenCV, and Flask.",
+      description: "A Flask API that wraps TensorFlow and OpenCV image-recognition workflows for upload, preprocessing, prediction, and response formatting.",
       image: "/1706850719554.png?height=300&width=500",
       category: "python",
       technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "Docker"],
@@ -358,12 +363,12 @@ export default function Projects() {
       live: "https://your-live-demo-link.com",
       videoUrl: "/pot.mp4",
       longDescription:
-        "This Image Recognition API provides deep learning capabilities to identify objects, scenes, and people in images. Using a pre-trained MobileNetV2 model from TensorFlow, it processes images and returns top predictions with confidence scores. The API is built with Flask for easy integration, OpenCV for image preprocessing, and supports deployment via Docker. Ideal for use cases such as automated tagging, visual search, and content moderation.",
+        "An image-recognition API that uses a pre-trained TensorFlow model with OpenCV preprocessing to return predictions and confidence scores. It demonstrates practical API wrapping, request handling, and Docker-friendly deployment around AI workloads.",
     },
     {
       id: "ai1",
       title: "AI Debate Simulator",
-      description: "A web app that generates debates between an optimist and a skeptic using the Gemini API.",
+      description: "A Gemini API web app that generates structured multi-round debates between contrasting personas from a user-submitted topic.",
       image:
         "/1-Google-Rolls-Out-Gemini-2.0-Flash-as-Default-Introduces-2.0-Pro-Experimental-Trial-Source-winbuzzer.com_.jpg?height=300&width=500",
       category: "python",
@@ -373,13 +378,13 @@ export default function Projects() {
       featured: true,
       videoUrl: "/aiiNTEGRATION.mp4",
       longDescription:
-        "The AI Debate Simulator is a Flask-based web application that leverages the Gemini API to generate dynamic debates. Users input a topic, and the app creates a multi-round debate between a confident optimist and a critical skeptic. Features include a user-friendly interface for topic submission, real-time debate generation, and styled debate cards to display arguments. The app is ideal for exploring AI-driven argumentation and can be extended with additional personas or debate rounds.",
+        "A Flask-based Gemini API application that turns a user topic into a structured debate between contrasting personas. The project connects directly to my resume's AI-integration focus: prompt design, API orchestration, response formatting, and clear front-end presentation.",
     },
     {
       id: "ai2",
       title: "Gemini Powered Tutor",
       description:
-        "A web-based tutoring system powered by the Gemini API, providing intelligent responses to user queries.",
+        "A Django and React tutoring assistant that connects to the Gemini API and returns guided learning responses through a responsive chat flow.",
       image: "/f34d81945efec19e43ad4899cbb737e1.png?height=300&width=500",
       category: "python",
       technologies: ["Python", "Django", "React", "Gemini API", "CORS"],
@@ -387,13 +392,13 @@ export default function Projects() {
       live: "https://predictive-maintenance-demo.vercel.app",
       videoUrl: "/Gemini.mp4",
       longDescription:
-        "Gemini Powered Tutor is an AI-powered web application that leverages the Gemini API to provide intelligent tutoring responses to user queries. Built with a Django backend and a React frontend, the system allows users to ask questions and receive detailed answers in real-time. Features include a responsive chat interface, seamless API integration, and CORS configuration for secure cross-origin communication. The project demonstrates the integration of modern web technologies with AI to create an interactive learning experience.",
+        "A Django and React tutoring assistant powered by the Gemini API. It demonstrates the AI integration work highlighted in my resume: request routing, CORS configuration, prompt handling, chat-style UX, and clean API responses for learning-oriented interactions.",
     },
     {
       id: "ai3",
       title: "Stable Diffusion Image Generator",
       description:
-        "A web application that generates images from text prompts using Stability AI's Stable Diffusion model.",
+        "A text-to-image generation project using Diffusers, PyTorch, Gradio, configuration files, and prompt-driven image output.",
       image: "/creating-easy-stable-diffusion-3-sd3-image-with-old-model-v0-1mf0wtfgq5kc1.jpg?height=300&width=500",
       category: "python",
       technologies: ["Python", "Diffusers", "Torch", "Gradio", "PyYAML", "Pillow"],
@@ -401,7 +406,7 @@ export default function Projects() {
       live: "https://your-deployed-app-url.com",
       videoUrl: "/Pipeline.mp4",
       longDescription:
-        "This project is a Stable Diffusion-based image generator using `diffusers`, `Gradio`, and `PyTorch`. It allows users to generate images from text prompts via an interactive UI or command-line. The application supports CPU and GPU (CUDA) processing, with configurable models in `config.yaml`. Users can run the Gradio UI or generate images through a CLI command, with automatic image saving. The system is easy to set up and deploy.",
+        "A Stable Diffusion image-generation project using Diffusers, Gradio, PyTorch, PyYAML, and Pillow. It supports prompt-based generation, configurable models, automatic image saving, and a simple UI/CLI flow for experimenting with generative AI pipelines.",
     },
   ]
 
@@ -459,12 +464,12 @@ export default function Projects() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              Over the past 2.5+ years, I've worked with various clients, delivering impactful solutions across a range of technologies, showcasing my adaptability and commitment to excellence.
+              Over the past 2+ years, I've built ASP.NET Core APIs, Azure automation, React dashboards, and secure data workflows for insurance, fintech, compliance, and CRM teams.
             </Typography>
           </Box>
         </motion.div>
 
-        {/* Featured Projects */}
+        {/* Client Projects */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -483,7 +488,7 @@ export default function Projects() {
               }}
             >
               <StarIcon sx={{ mr: 1, color: "rgb(234, 179, 8)" }} />
-              Live Projects
+              My Clients
             </Typography>
 
             <Grid container spacing={3}>
@@ -656,7 +661,7 @@ export default function Projects() {
           >
             <Tab label="All Projects" value="all" />
             <Tab label=".NET Projects" value="net" />
-            <Tab label="Python & ML" value="python" />
+            <Tab label="AI & Integration" value="python" />
           </Tabs>
 
           <Grid container spacing={4}>
@@ -1022,4 +1027,3 @@ export default function Projects() {
     </Box>
   )
 }
-

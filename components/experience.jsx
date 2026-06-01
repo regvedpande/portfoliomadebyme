@@ -44,52 +44,54 @@ export default function Experience() {
     {
   "title": "Software Developer",
   "company": "Datamatics Global Services Limited",
-  "location": "Mumbai, Maharashtra",
-  "period": "June 2025 – Present",
+  "location": "Mumbai, Maharashtra (Remote)",
+  "period": "Jun 2025 - May 2026",
   "description": [
-    "Develop & maintain ASP.NET Core Web API modules on the Reliance Motor Claims platform, handling OD, PA, and Theft claim lifecycle across 10,000+ annual claims.",
-    "Designed WCF services on IIS (basicHttpBinding / wsHttpBinding) for SOAP-based exchange with 3 insurers, 50+ surveyor portals, and 200+ garages via BizTalk middleware.",
-    "Built 4 Azure Functions on daily schedules generating claims reports for 200+ garages, replacing a manual Excel-based process.",
-    "Used GitHub Copilot & Claude for stored procedure scaffolding and API boilerplate, cutting feature delivery time by 20%."
+    "Developed and maintained ASP.NET Core Web APIs, WebForms, and Savvion BPM features for the Reliance Motor Claims platform across OD, Theft, and PA claim types, supporting 10,000+ claims a year from FNOL to payout.",
+    "Built and consumed WCF/SOAP services on IIS for insurer, surveyor, and garage integrations, including message contracts, claim-status updates, and fault-tolerant BizTalk routing.",
+    "Built 6 scheduled Azure Functions for daily claims reporting and reconciliation across 200+ garages and surveyors, helping reduce manual reporting effort.",
+    "Tuned high-volume SQL Server stored procedures and EF Core queries, achieving 30% faster report generation and 25% lower peak database load during daily reporting windows."
   ],
   "skills": [
     "ASP.NET Core",
     "C#",
+    "WebForms",
     "WCF/SOAP",
     "IIS",
     "Azure Functions",
     "BizTalk",
+    "Savvion BPM",
     "SQL Server",
+    "EF Core",
     "REST API",
-    "Git",
-    "Agile/Scrum",
     "SQL Query Optimization",
-    "GitHub Copilot"
+    "GitHub Copilot",
+    "Claude"
   ]
 },
     {
       "title": "Software Developer",
       "company": "Cylsys Software Solution Private Limited",
       "location": "Narsinghpur, Madhya Pradesh",
-      "period": "July 2024 – March 2025",
+      "period": "Jul 2024 - Mar 2025",
       "description": [
-        "Built 8 compliance & declaration forms (Antifraud, Conflict of Interest, NDA, HR onboarding) for UTI Mutual Fund using ASP.NET Core 5 MVC, ADO.NET, Dapper, and PostgreSQL with fiscal-year eligibility checks.",
-        "Developed 12+ RESTful APIs with ADO.NET and SQL Server for Nuvama's financial transactions system, handling role-based approval workflows for makers, checkers, and risk approvers.",
-        "Implemented file upload/download with ZIP compression, token-based auth middleware, Serilog structured logging, and health-check endpoints."
+        "Delivered 8 fiscal-year compliance forms for UTI Mutual Fund on ASP.NET Core MVC with Razor Pages, Dapper, and PostgreSQL, including a year-based eligibility engine, RBAC, validation rules, and audit logging.",
+        "Built and deployed 12+ RESTful Web APIs for the Nuvama financial transactions platform with a React approval dashboard, maker-checker-risk workflows, audit trail, and SQL Server backend.",
+        "Implemented JWT authentication middleware, Serilog structured logging, health checks, and xUnit tests across core approval workflows while coordinating with QA and cross-functional teams."
       ],
-      "skills": ["ASP.NET Core 5", "ADO.NET", "Dapper", "PostgreSQL", "SQL Server", "JWT", "Serilog", "RESTful APIs", "Azure", ".NET 5/6/8"]
+      "skills": ["ASP.NET Core MVC", "Razor Pages", "React", "ADO.NET", "Dapper", "PostgreSQL", "SQL Server", "JWT", "Serilog", "xUnit", "Health Checks"]
     },
     {
-      "title": "Associate Software Developer",
+      "title": "Software Developer Intern (Contract)",
       "company": "MKP IT Services Private Limited",
       "location": "Nagpur, Maharashtra",
       "period": "December 2023 - May 2024",
       "description": [
-        "Developed 5 CRM modules with ASP.NET MVC (.NET 6), Entity Framework Core, and a React dashboard using CQRS/MediatR, managing 50,000+ customer records across 3 departments.",
-        "Built 8 Inventory Management Web API endpoints with JWT role-based authorization, improving response times by 25% on read-heavy reporting endpoints.",
-        "Led refactoring of 15+ raw SQL queries to EF Core LINQ with code-first migrations, cutting query time by 20% on reporting pages."
+        "Ramped up quickly on C#, ASP.NET Core, and EF Core while building UI components and CRUD features for an internal CRM on a React, Bootstrap, and SQL Server stack.",
+        "Built and tested REST API endpoints with JWT authentication and Swagger documentation, plus SQL Server queries, stored procedures, EF Core LINQ, code-first migrations, and xUnit basics.",
+        "Contributed across Agile ceremonies, Git branching, pull requests, code reviews, and GitHub Actions CI/CD while delivering small features and bug fixes independently."
       ],
-      "skills": [".NET 6", "ASP.NET MVC", "Entity Framework Core", "CQRS", "MediatR", "React", "SQL Server", "JWT", "LINQ", "Agile", "CI/CD"]
+      "skills": ["C#", ".NET 6", "ASP.NET Core", "Entity Framework Core", "React", "Bootstrap", "SQL Server", "JWT", "Swagger", "LINQ", "GitHub Actions"]
     }   
 
   ]
@@ -140,7 +142,7 @@ export default function Experience() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              My journey building enterprise solutions and driving technological innovation
+              My journey building production software for insurance, fintech, compliance, and CRM teams
             </Typography>
           </Box>
         </motion.div>
@@ -148,7 +150,7 @@ export default function Experience() {
         <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <Grid container spacing={4}>
             {experiences.map((exp, index) => (
-              <Grid item xs={12} md={4} key={exp.title}>
+              <Grid item xs={12} md={4} key={`${exp.company}-${exp.period}`}>
                 <motion.div
                   variants={item}
                   whileHover={{ y: -8 }}
@@ -281,13 +283,16 @@ export default function Experience() {
               >
                 <Box>
                   <Typography variant="h6" color="text.primary">
-                    Bachelor of Technology in Computer Science and Engineering
+                    Bachelor of Technology in Computer Science & Engineering
                   </Typography>
                   <Typography variant="subtitle2" color="text.secondary" sx={{ mt: 0.5 }}>
                     (Specialisation in Artificial Intelligence and Machine Learning)
                   </Typography>
                   <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
                     Lovely Professional University - Phagwara, Punjab
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                    Certifications: AZ-900 Azure Fundamentals (2025), Microsoft Generative AI Certification (2025), Advanced C# Development
                   </Typography>
                 </Box>
                 <Chip

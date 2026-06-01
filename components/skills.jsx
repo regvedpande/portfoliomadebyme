@@ -39,7 +39,7 @@ export default function Skills() {
       category: ".NET & C# Development",
     },
     {
-      name: ".NET 5/6/7/8",
+      name: ".NET 6/8/10",
       icon: <CodeIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: ".NET & C# Development",
@@ -69,7 +69,7 @@ export default function Skills() {
       category: ".NET & C# Development",
     },
     {
-      name: "Blazor",
+      name: "ASP.NET WebForms",
       icon: <CodeIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: ".NET & C# Development",
@@ -124,6 +124,12 @@ export default function Skills() {
       color: theme.palette.mode === "light" ? "rgb(37, 37, 37)" : "rgb(220, 220, 220)",
       category: "Web API & ASP.NET Core",
     },
+    {
+      name: "OAuth 2.0",
+      icon: <DnsIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Web API & ASP.NET Core",
+    },
 
     // Database, ORM & Cloud Services Skills (previously Data)
     {
@@ -164,6 +170,18 @@ export default function Skills() {
     },
     {
       name: "Azure Functions",
+      icon: <CloudIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Database, ORM & Cloud Services",
+    },
+    {
+      name: "Azure Service Bus",
+      icon: <CloudIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Database, ORM & Cloud Services",
+    },
+    {
+      name: "Blob Storage & APIM",
       icon: <CloudIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: "Database, ORM & Cloud Services",
@@ -219,7 +237,19 @@ export default function Skills() {
       category: "Architecture & Tools",
     },
     {
-      name: "Claude AI & Semantic Kernel",
+      name: "Claude Code",
+      icon: <BrainIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "Semantic Kernel",
+      icon: <BrainIcon fontSize="medium" />,
+      color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
+      category: "Architecture & Tools",
+    },
+    {
+      name: "RAG, MCP & OpenAI API",
       icon: <BrainIcon fontSize="medium" />,
       color: theme.palette.mode === "light" ? "rgb(59, 59, 59)" : "rgb(200, 200, 200)",
       category: "Architecture & Tools",
@@ -280,7 +310,7 @@ export default function Skills() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              I've worked with a variety of technologies and frameworks to create robust and scalable applications.
+              A resume-aligned stack across backend APIs, React front ends, SQL tuning, Azure services, secure integrations, and AI-assisted delivery.
             </Typography>
           </Box>
         </motion.div>
@@ -552,7 +582,7 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    2.5+
+                    2+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
                     Years .NET
@@ -573,10 +603,10 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    10+
+                    4
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    .NET Projects
+                    Client Systems
                   </Typography>
                 </Box>
               </Grid>
@@ -615,10 +645,10 @@ export default function Skills() {
                   }}
                 >
                   <Typography variant="h3" color="primary" fontWeight="bold">
-                    15+
+                    12+
                   </Typography>
                   <Typography variant="body1" color="text.secondary">
-                    Projects
+                    APIs & Features
                   </Typography>
                 </Box>
               </Grid>
@@ -629,4 +659,3 @@ export default function Skills() {
     </Box>
   )
 }
-

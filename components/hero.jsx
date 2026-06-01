@@ -17,7 +17,7 @@ import {
 import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 
-const titles = [".NET Full Stack Developer", "ASP.NET Core Developer", "Enterprise Solutions Developer"]
+const titles = [".NET Full Stack Developer", "ASP.NET Core Web API Developer", "Azure & React Developer"]
 
 export default function Hero() {
   const ref = useRef(null)
@@ -185,7 +185,7 @@ export default function Hero() {
                     textAlign: { xs: "center", lg: "left" }, // Ensure proper alignment
                   }}
                 >
-                  ASP.NET Core 8 Full Stack Developer with 2.5+ years delivering mission-critical enterprise platforms for insurance, compliance, and CRM clients.
+                  .NET Full Stack Developer with 2+ years building ASP.NET Core Web APIs, Azure-hosted services, and React front ends for insurance, fintech, and CRM platforms, including WCF/SOAP and BizTalk integrations. Immediate joiner.
                 </Typography>
               </motion.div>
 
@@ -380,7 +380,7 @@ export default function Hero() {
                       <img
                         src="/WhatsApp Image 2025-03-18 at 20.51.59_31b61cd3.jpg?height=400&width=400"
                         alt="Developer Portrait"
-                        fetchpriority="high"
+                        fetchPriority="high"
                         style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
                       />
                     </Box>
@@ -421,7 +421,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  2.5+
+                  2+
                 </Box>
               </motion.div>
 
@@ -458,7 +458,7 @@ export default function Hero() {
                     boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                   }}
                 >
-                  15+
+                  4
                 </Box>
               </motion.div>
             </motion.div>
@@ -493,7 +493,7 @@ export default function Hero() {
             {[
               {
                 title: "For .NET Developer Profile",
-                description: "Based on my .Net Development skills and projects",
+                description: "Focused on ASP.NET Core, Azure, SQL Server, React, and enterprise client delivery",
                 path: "/MyDotNetResume.pdf",
               },
              
@@ -562,4 +562,3 @@ const IconButton = ({ children, ...props }) => {
     </Button>
   )
 }
-

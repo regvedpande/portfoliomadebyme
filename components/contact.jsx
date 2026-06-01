@@ -146,7 +146,7 @@ export default function Contact() {
                 fontSize: { xs: "1rem", md: "1.25rem" },
               }}
             >
-              Have a project in mind or want to discuss opportunities? Let's talk!
+              Looking for a .NET Full Stack Developer for ASP.NET Core, Azure, SQL Server, React, or integration-heavy work? Let's talk.
             </Typography>
           </Box>
         </motion.div>
@@ -266,7 +266,7 @@ export default function Contact() {
                           Location
                         </Typography>
                         <Typography variant="body1" fontWeight={500}>
-                          Nagpur, Maharashtra 441103
+                          Nagpur, India - Open to Remote / Relocation
                         </Typography>
                       </Box>
                     </Box>
@@ -520,4 +520,3 @@ export default function Contact() {
     </Box>
   )
 }
-
